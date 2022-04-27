@@ -1,0 +1,15 @@
+
+.post, .page {
+    width: 500px;
+    margin: 3em 0;
+    padding: 2em;
+
+}
+.blog .post:nth-child(even){
+    background-color: #dcdcdc;
+}
+
+
+.wp-post-image {
+    border: 20px solid darkolivegreen;
+}
