@@ -11,6 +11,8 @@ get_header();
 	</h1>
 
 
+
+
 <div class="container">
 
 
@@ -35,7 +37,7 @@ get_header();
 
 
 				<!-- include from the inc folder -->
-				<?php get_template_part('inc/section', 'content'); ?>
+				<!-- get_template_part('inc/section', 'content'); -->
 
 
 
@@ -43,9 +45,16 @@ get_header();
 					<?php the_post_thumbnail( 'wcm-gallery' ); ?>
                 </div>
 
+
+
 				<?php the_excerpt(); ?>
 
+
+
             </article>
+
+
+
 
 		<?php
 		endwhile;
@@ -59,7 +68,13 @@ get_header();
 		endif;
 		?>
 
+
+
 </div>
+
+
+
+
 
 <?php
 get_footer();
