@@ -5,11 +5,9 @@ get_header();
 
 <h1>Student</h1>
 
-<div class="">
+<div class="container">
 
-	<?php
-	if ( have_posts() ) :
-		while ( have_posts() ) : the_post(); ?>
+	<?php if ( have_posts() ) :while ( have_posts() ) : the_post(); ?>
 
             <article
 
