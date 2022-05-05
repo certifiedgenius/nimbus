@@ -263,6 +263,24 @@ add_action( 'init', 'my_custom_travel_soccer_post_type', );
 
 
 
+// netr_team
+function my_custom_netr_team_post_type() {
+	register_post_type( 'netr_team', [
+		'labels'      => [
+			'name'          => __( 'netrs team' ),
+			'singular_name' => __( 'netr team'),
+		],
+		'public'      => true,
+		'has_archive' => true,
+		'supports'    => ['title', 'editor', 'thumbnail', 'custom-fields' ],
+		'rewrite'     => ['slug' => 'netr team'],
+		'menu_icon'   => 'dashicons-airplane',
+		'taxonomies'  => ['travel_country', 'travel_sport_league', 'travel_sport_type'],
+		'description' => 'hes one of the smartest noddles in the ramen bowl',
+	] );
+}
+add_action( 'init', 'my_custom_netr_team_post_type', );
+
 
 /**
  * Registrera Custom Taxonomies
