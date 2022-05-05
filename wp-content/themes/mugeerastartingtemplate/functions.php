@@ -406,7 +406,7 @@ function my_custom_taxonomy_for_travel_type() {
 		'show_ui'           => true,
 		'show_admin_column' => true,
 		'query_var'         => true,
-		'rewrite'           => array( 'slug' => 'travels' ),
+		'rewrite'           => array( 'slug' => 'travels-types' ),
 	];
 	register_taxonomy( 'travel_type', ['wcm_travel, travel_camp, travel_cup, travel_matches, page'], $args ); // to what post type do you want to connect this taxonomy to?
 }
