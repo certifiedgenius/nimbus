@@ -13,11 +13,12 @@ if ( ! function_exists( 'mugeera_theme_setup' ) ) {
 	 *
 	 */
 	function mugeera_theme_setup() {
+
 		// Registrerar platser för våra fasta menyer. Visas i temat med wp_nav_menu()
 		register_nav_menus(
 			[
 				'primary' => esc_html__( 'Main navigation', 'main_menu' ),
-				'footer'  => esc_html__( 'Footer navigation', 'main_menu' ),
+				'footer'  => esc_html__( 'Footer navigation', 'main_footer_menu' ),
 			]
 		);
 
@@ -63,11 +64,9 @@ if ( ! function_exists( 'mugeera_theme_setup' ) ) {
 			'uploads'            => true,
 			'random-default'     => false,
 			'header-text'        => true,
-			'default-text-color' => 'Detta är mitt tema',
+			'default-text-color' => 'FFFFF',
 			'video'              => true,
 		];
-
-
 		add_theme_support( 'custom-header', $header_args );
 
 
@@ -80,12 +79,16 @@ if ( ! function_exists( 'mugeera_theme_setup' ) ) {
 
 
 		// Add theme support for Translation
-		//load_theme_textdomain( 'wcmtheme', get_template_directory() . '/language' );
+		
 
 
 		add_image_size( 'wcm-gallery', '500', '300', true );
 	}
 }
+
+
+
+
 
 
 add_action( 'after_setup_theme', 'mugeera_theme_setup' );
@@ -102,18 +105,11 @@ function add_theme_scripts() {
 	wp_enqueue_style( 'style', get_theme_file_uri( 'dist/index.css' ), );
 
     wp_enqueue_style('main', get_template_directory_uri() . '/assets/css/index.css');
-	wp_enqueue_style('bootstrap', get_template_directory_uri() . '/assets/css/bootstrap.min.css');
+
 
     wp_enqueue_script('script', get_template_directory_uri() . '/assets/js/script.js');
 }
 add_action( 'wp_enqueue_scripts', 'add_theme_scripts' );
-
-
-
-
-
-
-
 
 
 
