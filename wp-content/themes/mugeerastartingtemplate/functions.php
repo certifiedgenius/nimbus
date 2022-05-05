@@ -138,23 +138,131 @@ add_filter( 'nav_menu_css_class', 'social_link_classes', 10, 4 );
  * https://developer.wordpress.org/reference/functions/register_post_type/
  *
  */
-function my_custom_post_type() {
-	register_post_type( 'show_in_menu', [ // wcm_students
+// custom post type students
+function my_custom_students_post_type() {
+	register_post_type( 'wcm_students', [
 		'labels'      => [
 			'name'          => __( 'Students' ),
 			'singular_name' => __( 'Student'),
 		],
 		'public'      => true,
 		'has_archive' => true,
+		'supports'    => ['title', 'editor', 'thumbnail', 'custom-fields' ],
 		'rewrite'     => ['slug' => 'students'],
 		'menu_icon'   => 'dashicons-businessperson',
 		'taxonomies'  => ['wcm_classes'],
+		'description' => 'a custom post type for students made for a workshop',
+	] );
+}
+add_action( 'init', 'my_custom_students_post_type', );
+
+
+
+// wcm_travel
+function my_custom_wcm_travel_post_type() {
+	register_post_type( 'wcm_travel', [
+		'labels'      => [
+			'name'          => __( 'wcm Travels' ),
+			'singular_name' => __( 'wcm Travel'),
+		],
+		'public'      => true,
+		'has_archive' => true,
 		'supports'    => ['title', 'editor', 'thumbnail', 'custom-fields' ],
+		'rewrite'     => ['slug' => 'wcm_travel'],
+		'menu_icon'   => 'dashicons-airplane',
+		'taxonomies'  => ['travel_age', 'travel_country', 'travel_sport_league', 'travel_sport_type', 'travel_type'],
 		'description' => 'hes one of the smartest noddles in the ramen bowl',
 	] );
 }
+add_action( 'init', 'my_custom_wcm_travel_post_type', );
 
-add_action( 'init', 'my_custom_post_type', );
+
+
+// travel_matches
+function my_custom_travel_matches_post_type() {
+	register_post_type( 'travel_matches', [
+		'labels'      => [
+			'name'          => __( 'travel matches' ),
+			'singular_name' => __( 'travel_match'),
+		],
+		'public'      => true,
+		'has_archive' => true,
+		'supports'    => ['title', 'editor', 'thumbnail', 'custom-fields' ],
+		'rewrite'     => ['slug' => 'travel_match'],
+		'menu_icon'   => 'dashicons-airplane',
+		'taxonomies'  => ['travel_sport_league', 'travel_type'],
+		'description' => 'hes one of the smartest noddles in the ramen bowl',
+	] );
+}
+add_action( 'init', 'my_custom_travel_matches_post_type', );
+
+
+
+
+
+// travel_cup
+function my_custom_travel_cup_post_type() {
+	register_post_type( 'travel_cup', [
+		'labels'      => [
+			'name'          => __( 'travel cups' ),
+			'singular_name' => __( 'travel cup'),
+		],
+		'public'      => true,
+		'has_archive' => true,
+		'supports'    => ['title', 'editor', 'thumbnail', 'custom-fields' ],
+		'rewrite'     => ['slug' => 'travel_match'],
+		'menu_icon'   => 'dashicons-airplane',
+		'taxonomies'  => ['travel_age', 'travel_country', 'travel_sport_type', 'travel_type'],
+		'description' => 'hes one of the smartest noddles in the ramen bowl',
+	] );
+}
+add_action( 'init', 'my_custom_travel_cup_post_type', );
+
+
+
+
+// travel_camp
+function my_custom_travel_camp_post_type() {
+	register_post_type( 'travel_camp', [
+		'labels'      => [
+			'name'          => __( 'travel camps' ),
+			'singular_name' => __( 'travel camp'),
+		],
+		'public'      => true,
+		'has_archive' => true,
+		'supports'    => ['title', 'editor', 'thumbnail', 'custom-fields' ],
+		'rewrite'     => ['slug' => 'travel_match'],
+		'menu_icon'   => 'dashicons-airplane',
+		'taxonomies'  => ['travel_age', 'travel_country', 'travel_sport_type', 'travel_type'],
+		'description' => 'hes one of the smartest noddles in the ramen bowl',
+	] );
+}
+add_action( 'init', 'my_custom_travel_camp_post_type', );
+
+
+
+
+// travel_soccer
+function my_custom_travel_soccer_post_type() {
+	register_post_type( 'travel_soccer', [
+		'labels'      => [
+			'name'          => __( 'travel soccers' ),
+			'singular_name' => __( 'travel soccer'),
+		],
+		'public'      => true,
+		'has_archive' => true,
+		'supports'    => ['title', 'editor', 'thumbnail', 'custom-fields' ],
+		'rewrite'     => ['slug' => 'travel_match'],
+		'menu_icon'   => 'dashicons-airplane',
+		'taxonomies'  => ['travel_country', 'travel_sport_league', 'travel_sport_type'],
+		'description' => 'hes one of the smartest noddles in the ramen bowl',
+	] );
+}
+add_action( 'init', 'my_custom_travel_soccer_post_type', );
+
+
+
+
 
 /**
  * Registrera Custom Taxonomies
@@ -165,16 +273,144 @@ add_action( 'init', 'my_custom_post_type', );
  */
 
 // Bättre namn på funktionen....
-function my_custom_tax() {
+// students
+function my_custom_taxonomy_for_students() {
 	$labels = [
-		'name'              => _x( '', 'taxonomy general name' ),
-		'singular_name'     => _x( '', 'taxonomy singular name' ),
+		'name'              => _x( 'Classes', 'taxonomy general name', 'wcmtheme' ),
+		'singular_name'     => _x( 'Class', 'taxonomy singular name','wcmtheme' ),
 		// Läs på om och lägg till fler vi behov!
 	];
-	$args   = [];
-	//register_taxonomy( '' , [], $args );
+	$args   = [
+		'public'      		=> true,
+		'hierarchical'      => true,
+		'labels'            => $labels,
+		'show_ui'           => true,
+		'show_admin_column' => true,
+		'query_var'         => true,
+		'rewrite'           => array( 'slug' => 'classes' ),
+	];
+	register_taxonomy( 'wcm_classes', ['post'], $args ); // to what post type do you want to connect this taxonomy to?
 }
-add_action( 'init', 'my_custom_tax' );
+add_action( 'init', 'my_custom_taxonomy_for_students',4 );
+
+
+
+
+// travel_age Taxonomies
+function my_custom_taxonomy_for_travel_age() {
+	$labels = [
+		'name'              => _x( 'Classes', 'taxonomy general name', 'wcmtheme' ),
+		'singular_name'     => _x( 'Class', 'taxonomy singular name','wcmtheme' ),
+		// Läs på om och lägg till fler vi behov!
+	];
+	$args   = [
+		'public'      		=> true,
+		'hierarchical'      => true,
+		'labels'            => $labels,
+		'show_ui'           => true,
+		'show_admin_column' => true,
+		'query_var'         => true,
+		'rewrite'           => array( 'slug' => 'travels' ),
+	];
+	register_taxonomy( 'travel_age', ['wcm_travel, travel_camp, travel_cup, page'], $args ); // to what post type do you want to connect this taxonomy to?
+}
+add_action( 'init', 'my_custom_taxonomy_for_travel_age',4 );
+
+
+
+
+
+// travel_country Taxonomies
+function my_custom_taxonomy_for_travel_country() {
+	$labels = [
+		'name'              => _x( 'Classes', 'taxonomy general name', 'wcmtheme' ),
+		'singular_name'     => _x( 'Class', 'taxonomy singular name','wcmtheme' ),
+		// Läs på om och lägg till fler vi behov!
+	];
+	$args   = [
+		'public'      		=> true,
+		'hierarchical'      => true,
+		'labels'            => $labels,
+		'show_ui'           => true,
+		'show_admin_column' => true,
+		'query_var'         => true,
+		'rewrite'           => array( 'slug' => 'classes' ),
+	];
+	register_taxonomy( 'travel_country', ['wcm_travel, travel_camp, travel_cup, travel_soccer, page'], $args ); // to what post type do you want to connect this taxonomy to?
+}
+add_action( 'init', 'my_custom_taxonomy_for_travel_country',4 );
+
+
+
+
+
+// travel_sport_league Taxonomies
+function my_custom_taxonomy_for_travel_sport_league() {
+	$labels = [
+		'name'              => _x( 'Classes', 'taxonomy general name', 'wcmtheme' ),
+		'singular_name'     => _x( 'Class', 'taxonomy singular name','wcmtheme' ),
+		// Läs på om och lägg till fler vi behov!
+	];
+	$args   = [
+		'public'      		=> true,
+		'hierarchical'      => true,
+		'labels'            => $labels,
+		'show_ui'           => true,
+		'show_admin_column' => true,
+		'query_var'         => true,
+		'rewrite'           => array( 'slug' => 'classes' ),
+	];
+	register_taxonomy( 'travel_sport_league', ['wcm_travel, travel_soccer,travel_matches, page'], $args ); // to what post type do you want to connect this taxonomy to?
+}
+add_action( 'init', 'my_custom_taxonomy_for_travel_sport_league',4 );
+
+
+
+
+
+// travel_sport_type Taxonomies
+function my_custom_taxonomy_for_travel_sport_type() {
+	$labels = [
+		'name'              => _x( 'Classes', 'taxonomy general name', 'wcmtheme' ),
+		'singular_name'     => _x( 'Class', 'taxonomy singular name','wcmtheme' ),
+		// Läs på om och lägg till fler vi behov!
+	];
+	$args   = [
+		'public'      		=> true,
+		'hierarchical'      => true,
+		'labels'            => $labels,
+		'show_ui'           => true,
+		'show_admin_column' => true,
+		'query_var'         => true,
+		'rewrite'           => array( 'slug' => 'classes' ),
+	];
+	register_taxonomy( 'travel_sport_type', ['wcm_travel, travel_camp, travel_cup, travel_soccer, page'], $args ); // to what post type do you want to connect this taxonomy to?
+}
+add_action( 'init', 'my_custom_taxonomy_for_travel_sport_type',4 );
+
+
+
+
+
+// travel_type Taxonomies
+function my_custom_taxonomy_for_travel_type() {
+	$labels = [
+		'name'              => _x( 'Classes', 'taxonomy general name', 'wcmtheme' ),
+		'singular_name'     => _x( 'Class', 'taxonomy singular name','wcmtheme' ),
+		// Läs på om och lägg till fler vi behov!
+	];
+	$args   = [
+		'public'      		=> true,
+		'hierarchical'      => true,
+		'labels'            => $labels,
+		'show_ui'           => true,
+		'show_admin_column' => true,
+		'query_var'         => true,
+		'rewrite'           => array( 'slug' => 'classes' ),
+	];
+	register_taxonomy( 'travel_type', ['wcm_travel, travel_camp, travel_cup, travel_matches, page'], $args ); // to what post type do you want to connect this taxonomy to?
+}
+add_action( 'init', 'my_custom_taxonomy_for_travel_type',4 );
 
 /**
  * Custom Meta Boxes
