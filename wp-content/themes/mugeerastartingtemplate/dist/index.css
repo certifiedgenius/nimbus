@@ -485,11 +485,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .mb-10{
   margin-bottom: 2.5rem;
 }
-.mt-4{
-  margin-top: 1rem;
-}
 .ml-1{
   margin-left: 0.25rem;
+}
+.mt-4{
+  margin-top: 1rem;
 }
 .flex{
   display: flex;
@@ -497,8 +497,8 @@ Ensure the default browser behavior of the `hidden` attribute.
 .inline-flex{
   display: inline-flex;
 }
-.h-10{
-  height: 2.5rem;
+.h-5{
+  height: 1.25rem;
 }
 .h-4{
   height: 1rem;
@@ -506,11 +506,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .w-64{
   width: 16rem;
 }
-.w-10{
-  width: 2.5rem;
-}
 .w-full{
   width: 100%;
+}
+.w-5{
+  width: 1.25rem;
 }
 .w-4{
   width: 1rem;
@@ -548,25 +548,15 @@ Ensure the default browser behavior of the `hidden` attribute.
 .gap-4{
   gap: 1rem;
 }
-.rounded-full{
-  border-radius: 9999px;
-}
 .rounded{
   border-radius: 0.25rem;
 }
 .border-0{
   border-width: 0px;
 }
-.bg-indigo-500{
-  --tw-bg-opacity: 1;
-  background-color: rgb(99 102 241 / var(--tw-bg-opacity));
-}
 .bg-gray-100{
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
-}
-.p-2{
-  padding: 0.5rem;
 }
 .px-5{
   padding-left: 1.25rem;
@@ -580,13 +570,13 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-left: 1rem;
   padding-right: 1rem;
 }
-.px-8{
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
 .py-4{
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+.px-8{
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 .py-1{
   padding-top: 0.25rem;
@@ -635,10 +625,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-text-opacity: 1;
   color: rgb(17 24 39 / var(--tw-text-opacity));
 }
-.text-white{
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
 .text-gray-500{
   --tw-text-opacity: 1;
   color: rgb(107 114 128 / var(--tw-text-opacity));
@@ -654,6 +640,28 @@ Ensure the default browser behavior of the `hidden` attribute.
 .focus\:outline-none:focus{
   outline: 2px solid transparent;
   outline-offset: 2px;
+}
+@media (min-width: 640px){
+
+  .sm\:ml-auto{
+    margin-left: auto;
+  }
+
+  .sm\:mt-0{
+    margin-top: 0px;
+  }
+
+  .sm\:flex-row{
+    flex-direction: row;
+  }
+
+  .sm\:justify-start{
+    justify-content: flex-start;
+  }
+
+  .sm\:text-left{
+    text-align: left;
+  }
 }
 @media (min-width: 768px){
 
