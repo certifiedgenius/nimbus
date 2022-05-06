@@ -1,7 +1,7 @@
 <?php get_header() ;?>
 
-
-<div class="flex flex-row-reverse items-center px-8"> <?php get_search_form(); ?> </div>
+	<!-- search bar under the nav -->
+	<div class="flex flex-row-reverse items-center px-8"> <?php get_search_form(); ?> </div>
 
 
 
