@@ -463,11 +463,29 @@ Ensure the default browser behavior of the `hidden` attribute.
     max-width: 1536px;
   }
 }
+.mt-4{
+  margin-top: 1rem;
+}
+.ml-1{
+  margin-left: 0.25rem;
+}
 .flex{
   display: flex;
 }
+.inline-flex{
+  display: inline-flex;
+}
+.h-4{
+  height: 1rem;
+}
+.w-4{
+  width: 1rem;
+}
 .flex-row{
   flex-direction: row;
+}
+.flex-row-reverse{
+  flex-direction: row-reverse;
 }
 .items-center{
   align-items: center;
@@ -478,13 +496,31 @@ Ensure the default browser behavior of the `hidden` attribute.
 .gap-4{
   gap: 1rem;
 }
-.py-4{
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+.rounded{
+  border-radius: 0.25rem;
+}
+.border-0{
+  border-width: 0px;
+}
+.bg-gray-100{
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
 }
 .px-8{
   padding-left: 2rem;
   padding-right: 2rem;
+}
+.py-4{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.py-1{
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+.px-3{
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
 }
 .align-middle{
   vertical-align: middle;
@@ -493,10 +529,28 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-size: 1.125rem;
   line-height: 1.75rem;
 }
+.text-base{
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
 .font-bold{
   font-weight: 700;
 }
 .text-black{
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+.hover\:bg-gray-200:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+}
+.focus\:outline-none:focus{
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+@media (min-width: 768px){
+
+  .md\:mt-0{
+    margin-top: 0px;
+  }
 }
