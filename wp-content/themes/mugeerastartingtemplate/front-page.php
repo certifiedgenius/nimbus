@@ -173,5 +173,29 @@
 
 
 
+
+
+
+
+<!-- Landing Page Newsletter section -->
+<section class="md:container md:mx-auto">
+	<div class="container relative items-center w-full py-12 mx-auto md:px-12 lg:px-24 max-w-full">
+
+		<h1 class="flex justify-center items-center py-2 text-5xl font-bold mb-1 mt-5">Newsletter</h1>
+			<p class="flex justify-center items-center py-3 mb-1 mt-5">Få uppdateringar kring spännande äventyr</p>
+
+
+
+
+
+		</div>
+</section>
+
+
+
+
+
+
+
 	</div> <!--Maybe this does not have a family -->
 <?php get_footer(); ?>
