@@ -26,13 +26,13 @@
 					<div class="max-w-3xl mx-auto text-center">
 
 						<div class="absolute top-11 right-3 bottom-11 left-3 overflow-hidden bg-fixed"
-						style="background-color: rgba(0, 0, 0, 0.5)">
+						style="background-color: rgba(0, 0, 0, 0.45)">
 
 							<div class="flex justify-center items-center h-full">
 
 								<div class="text-center text-white px-6 md:px-12">
 
-									<h1 class="py-12 text-5xl font-bold mt-0 mb-6">Travel Heading</h1>
+									<h1 class="py-12 text-5xl font-bold mt-0 mb-96">Travel Heading</h1>
 
 										<h6 class="text-3xl font-bold mb-8">Get the best tickets with the best memories that will live with you forever.</h3>
 
