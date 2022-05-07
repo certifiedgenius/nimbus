@@ -13,25 +13,43 @@
 
 
 <!-- The HERO at the top -->
-	<section class="relative py-20 2xl:py-40 overflow-hidden"> <!--try to add in w-full relative in the class-->
-
-		<img src="/wp-content/themes/mugeerastartingtemplate/assets/images/pierre.jpg" alt="Pierre blaché">
-
-  		<img class="hidden lg:block absolute top-0 right-0 h-128 w-128 -mt-52 -mr-52" src="zospace-assets/lines/circle.svg" alt="">
-  		<img class="hidden lg:block absolute bottom-0 left-0 h-128 w-128 -mb-52" src="zospace-assets/lines/full-circle.svg" alt="">
-  		<img class="block absolute bottom-0 left-0 h-24 md:h-32 lg:h-72 lg:ml-24 -mb-8" src="zospace-assets/images/five-stars.svg" alt="">
-  		<img class="block absolute bottom-0 left-0 h-128 w-128 -mb-96 -ml-24" src="zospace-assets/lines/circle.svg" alt="">
+	<section class="relative py-20 2xl:py-11 overflow-hidden"> <!--try to add in w-full relative in the class-->
 
   			<div class="container px-3 mx-auto">
 
-    <div class="max-w-3xl mx-auto text-center">
-      <span class="text-lg text-blue-400 font-bold">What&apos;s new at nimbus</span>
-      	<h2 class="my-10 text-5xl lg:text-6xl font-bold font-heading text-white">nimbus.. with them you want to travel with.</h2>
-      		<div class="max-w-md mx-auto">
-        		<p class="mb-20 text-lg text-gray-200">We love every memory that the travelers makes on their adventures.</p>
-        			<a class="inline-block mb-4 sm:mb-0 sm:mr-4 py-5 px-12 text-white font-bold bg-blue-500 hover:bg-blue-600 rounded-full transition duration-200" href="#">Join us now</a><a class="inline-block py-5 px-12 text-white font-bold border border-gray-300 hover:border-gray-200 rounded-full" href="#">Active demo</a>
 
-				</div>
+			  <div class="w-full h-full bg-no-repeat bg-cover bg-left bg-fixed">
+				  <img class="" src="/wp-content/themes/mugeerastartingtemplate/assets/images/pierre.jpg" alt="Pierre blaché">
+			  </div>
+
+
+					<div class="max-w-3xl mx-auto text-center">
+
+						<div class="absolute top-11 right-3 bottom-11 left-3 overflow-hidden bg-fixed"
+						style="background-color: rgba(0, 0, 0, 0.5)">
+
+							<div class="flex justify-center items-center h-full">
+
+								<div class="text-center text-white px-6 md:px-12">
+
+									<h1 class="py-12 text-5xl font-bold mt-0 mb-6">Travel Heading</h1>
+
+										<h6 class="text-3xl font-bold mb-8">Get the best tickets with the best memories that will live with you forever.</h3>
+
+							<button
+								type="button"
+								href="#"
+								class="inline-block px-6 py-2.5 border-2 border-white text-white font-medium text-xs leading-tight uppercase rounded hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out"
+								data-mdb-ripple="true" data-mdb-ripple-color="light">
+								Get started
+							</button>
+
+								</div>
+							</div>
+						</div>
+					</div>
+
+
 			</div>
 
 
