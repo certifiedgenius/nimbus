@@ -67,9 +67,11 @@
 
 
 
-<!-- Featured content section -->
+<!-- Featured content section 1 -->
 <section class="md:container md:mx-auto">
-    <div class="container relative items-center w-full px-5 py-12 mx-auto md:px-12 lg:px-24 max-w-7xl">
+	<div class="container relative items-center w-full py-12 mx-auto md:px-12 lg:px-24 max-w-full">
+
+		<h1 class="py-12 text-5xl font-bold mb-1 mt-12">Featured Travels</h1>
 
         <div class="grid w-full grid-cols-1 gap-6 mx-auto lg:grid-cols-3">
             <div class="p-6">
@@ -108,6 +110,65 @@
 
 
 
+<!-- Featured content section 2 -->
+<section class="md:container md:mx-auto">
+	<div class="container relative items-center w-full py-12 mx-auto md:px-12 lg:px-24 max-w-full">
+
+		<h1 class="py-12 text-5xl font-bold mb-1 mt-5">Featured Travels</h1>
+
+        <div class="grid w-full grid-cols-1 gap-6 mx-auto lg:grid-cols-3">
+            <div class="p-6">
+                <img class="object-cover object-center w-full mb-8 lg:h-48 md:h-36 rounded-xl" src="/wp-content/themes/mugeerastartingtemplate/assets/images/squareCard.png" alt="blog">
+
+                <h1 class="mx-auto mb-8 text-2xl font-semibold leading-none tracking-tighter text-neutral-600 lg:text-3xl">Short headline.</h1>
+                <p class="mx-auto text-base leading-relaxed text-gray-500">Free and Premium themes, UI Kit's, templates and landing pages built with Tailwind CSS, HTML &amp; Next.js.</p>
+
+                <div class="mt-4">
+                    <a href="#" class="inline-flex items-center mt-4 font-semibold text-blue-600 lg:mb-0 hover:text-neutral-600" title="read more"> Read More » </a>
+                </div>
+            </div>
+            <div class="p-6">
+                <img class="object-cover object-center w-full mb-8 lg:h-48 md:h-36 rounded-xl" src="/wp-content/themes/mugeerastartingtemplate/assets/images/squareCard.png" alt="blog">
+
+                <h1 class="mx-auto mb-8 text-2xl font-semibold leading-none tracking-tighter text-neutral-600 lg:text-3xl">Short headline.</h1>
+                <p class="mx-auto text-base leading-relaxed text-gray-500">Free and Premium themes, UI Kit's, templates and landing pages built with Tailwind CSS, HTML &amp; Next.js.</p>
+
+                <div class="mt-4">
+                    <a href="#" class="inline-flex items-center mt-4 font-semibold text-blue-600 lg:mb-0 hover:text-neutral-600" title="read more"> Read More » </a>
+                </div>
+            </div>
+            <div class="p-6">
+                <img class="object-cover object-center w-full mb-8 lg:h-48 md:h-36 rounded-xl" src="/wp-content/themes/mugeerastartingtemplate/assets/images/squareCard.png" alt="blog">
+
+                <h1 class="mx-auto mb-8 text-2xl font-semibold leading-none tracking-tighter text-neutral-600 lg:text-3xl">Short headline.</h1>
+                <p class="mx-auto text-base leading-relaxed text-gray-500">Free and Premium themes, UI Kit's, templates and landing pages built with Tailwind CSS, HTML &amp; Next.js.</p>
+
+                <div class="mt-4">
+                    <a href="#" class="inline-flex items-center mt-4 font-semibold text-blue-600 lg:mb-0 hover:text-neutral-600" title="read more"> Read More » </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+<!-- Travel Spotlight Video Section -->
+<section class="md:container md:mx-auto container relative items-center w-full py-12 mx-auto md:px-12 lg:px-24 max-w-full">
+
+
+			<iframe
+				width="1300"
+				height="900"
+				src="https://www.youtube-nocookie.com/embed/opd2fWrb0k0?start=99"
+				title="YouTube video player"
+				frameborder="0"
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+			</iframe>
+</section>
 
 
 
