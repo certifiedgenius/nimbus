@@ -182,12 +182,37 @@
 	<div class="container relative items-center w-full py-12 mx-auto md:px-12 lg:px-24 max-w-full">
 
 		<h1 class="flex justify-center items-center py-2 text-5xl font-bold mb-1 mt-5">Newsletter</h1>
-			<p class="flex justify-center items-center py-3 mb-1 mt-5">Få uppdateringar kring spännande äventyr</p>
+			<p class="flex justify-center items-center py-3 mb-1 mt-5">Få uppdateringar kring spännande äventyr.</p>
 
 
 
+			<!-- Container holding both of the forms -->
+			<div class="container relative items-center w-full py-12 mx-auto md:px-12 lg:px-24 max-w-full">
 
 
+				<!-- Checkboxes -->
+				<form action="/action-page.php" class="flex justify-start gap-6 mb-6">
+
+					<input type="checkbox" name="Sportresor" value="Sportresor">
+					<label for="Sportresor">Sportresor</label><br>
+
+					<input type="checkbox" name="Träningsläger" value="Träningsläger">
+					<label for="Träningsläger">Träningsläger</label><br>
+
+					<input type="checkbox" name="Cuper" value="Cuper">
+					<label for="Cuper">Cuper</label><br><br>
+				</form>
+
+
+
+				<!-- E-mail input -->
+				<form action="/action-page.php" class="flex ">
+
+					<input type="email" name="email" placeholder="Your E-mail">
+					<input type="submit" value="Subscribe" class="">
+				</form>
+
+			</div>
 		</div>
 </section>
 
