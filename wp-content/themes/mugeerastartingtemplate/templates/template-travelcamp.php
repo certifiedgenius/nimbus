@@ -248,6 +248,50 @@ Template Name: Träningsresor
     <h1 class="py-12 text-5xl font-bold mb-1 mt-12">Reviews</h1>
 
 
+            <section>
+                <div class="relative items-center w-full px-5 py-12 mx-auto md:px-12 lg:px-24 max-w-7xl">
+                    <div class="grid w-full grid-cols-1 gap-6 mx-auto lg:grid-cols-3">
+
+
+                        <div class="p-6">
+                            <img class="object-cover object-center w-full mb-8 lg:h-48 md:h-36 rounded-xl" src="/wp-content/themes/mugeerastartingtemplate/assets/images/squareCard.png" alt="blog">
+                            <div class="inline-flex justify-between w-full">
+                                <h1 class="mb-8 text-xl font-semibold leading-none tracking-tighter text-neutral-600">Short headline.</h1>
+                                <span>2/5 &#11088;</span>
+                            </div>
+                            <p class="mx-auto text-base font-medium leading-relaxed text-gray-500">Free and Premium themes, UI Kit's, templates and landing pages built with Tailwind CSS, HTML &amp; Next.js.</p>
+                        </div>
+
+
+                        <div class="p-6">
+                            <img class="object-cover object-center w-full mb-8 lg:h-48 md:h-36 rounded-xl" src="/wp-content/themes/mugeerastartingtemplate/assets/images/squareCard.png" alt="blog">
+                            <div class="inline-flex justify-between w-full">
+                                <h1 class="mb-8 text-xl font-semibold leading-none tracking-tighter text-neutral-600">Short headline.</h1>
+                                <span>5/5 &#11088;</span>
+                            </div>
+                            <p class="mx-auto text-base font-medium leading-relaxed text-gray-500">Free and Premium themes, UI Kit's, templates and landing pages built with Tailwind CSS, HTML &amp; Next.js.</p>
+                        </div>
+
+
+                        <div class="p-6">
+                            <img class="object-cover object-center w-full mb-8 lg:h-48 md:h-36 rounded-xl" src="/wp-content/themes/mugeerastartingtemplate/assets/images/squareCard.png" alt="blog">
+                            <div class="inline-flex justify-between w-full">
+                                <h1 class="mb-8 text-xl font-semibold leading-none tracking-tighter text-neutral-600">Short headline.</h1>
+                                <span>4/5 &#11088;</span>
+                            </div>
+                            <p class="mx-auto text-base font-medium leading-relaxed text-gray-500">Free and Premium themes, UI Kit's, templates and landing pages built with Tailwind CSS, HTML &amp; Next.js.</p>
+                        </div>
+
+
+                    </div>
+                </div>
+        </section>
+
+
+
+            <!-- Latest Updates/News Section -->
+            <h1 class="py-12 text-5xl font-bold mb-1 mt-12">Latest Updates/News</h1>
+                <p class="mb-8 text-base leading-relaxed text-left text-gray-500">p tag is love love love love love love love love love love love love love love.</p>
 
 
 
