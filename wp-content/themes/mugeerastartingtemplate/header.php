@@ -47,6 +47,7 @@
                         ]); ?>
 
 
+                    <!-- Make this CTA button link dynamic -->
                     <button href="https://nimbus.test/kontakt/" class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Kontakta oss
 
                         <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
