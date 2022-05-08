@@ -79,7 +79,7 @@ if ( ! function_exists( 'mugeera_theme_setup' ) ) {
 
 
 		// Add theme support for Translation
-		
+
 
 
 		add_image_size( 'wcm-gallery', '500', '300', true );
@@ -174,17 +174,17 @@ add_action( 'init', 'my_custom_wcm_travel_post_type', );
 
 
 
-// travel_matches
+// travel_matches - Sportresor
 function my_custom_travel_matches_post_type() {
 	register_post_type( 'travel_matches', [
 		'labels'      => [
-			'name'          => __( 'travel matches' ),
-			'singular_name' => __( 'travel match'),
+			'name'          => __( 'Sportresor' ),
+			'singular_name' => __( 'Sportresa'),
 		],
 		'public'      => true,
 		'has_archive' => true,
 		'supports'    => ['title', 'editor', 'thumbnail', 'custom-fields' ],
-		'rewrite'     => ['slug' => 'travel matches'],
+		'rewrite'     => ['slug' => 'sportresor'],
 		'menu_icon'   => 'dashicons-airplane',
 		'taxonomies'  => ['travel_sport_league', 'travel_type'],
 		'description' => 'hes one of the smartest noddles in the ramen bowl',
@@ -196,17 +196,17 @@ add_action( 'init', 'my_custom_travel_matches_post_type', );
 
 
 
-// travel_cup
+// travel_cup - Cuper
 function my_custom_travel_cup_post_type() {
 	register_post_type( 'travel_cup', [
 		'labels'      => [
-			'name'          => __( 'travel cups' ),
-			'singular_name' => __( 'travel cup'),
+			'name'          => __( 'Cuper' ),
+			'singular_name' => __( 'Cup'),
 		],
 		'public'      => true,
 		'has_archive' => true,
 		'supports'    => ['title', 'editor', 'thumbnail', 'custom-fields' ],
-		'rewrite'     => ['slug' => 'travel cup'],
+		'rewrite'     => ['slug' => 'cuper'],
 		'menu_icon'   => 'dashicons-airplane',
 		'taxonomies'  => ['travel_age', 'travel_country', 'travel_sport_type', 'travel_type'],
 		'description' => 'hes one of the smartest noddles in the ramen bowl',
@@ -217,17 +217,17 @@ add_action( 'init', 'my_custom_travel_cup_post_type', );
 
 
 
-// travel_camp
+// travel_camp - Träningsresor
 function my_custom_travel_camp_post_type() {
 	register_post_type( 'travel_camp', [
 		'labels'      => [
-			'name'          => __( 'travel camps' ),
-			'singular_name' => __( 'travel camp'),
+			'name'          => __( 'Träningsresor' ),
+			'singular_name' => __( 'Träningsresa'),
 		],
 		'public'      => true,
 		'has_archive' => true,
 		'supports'    => ['title', 'editor', 'thumbnail', 'custom-fields' ],
-		'rewrite'     => ['slug' => 'travel camp'],
+		'rewrite'     => ['slug' => 'träningsresor'],
 		'menu_icon'   => 'dashicons-hammer',
 		'taxonomies'  => ['travel_age', 'travel_country', 'travel_sport_type', 'travel_type'],
 		'description' => 'hes one of the smartest noddles in the ramen bowl',
@@ -238,17 +238,17 @@ add_action( 'init', 'my_custom_travel_camp_post_type', );
 
 
 
-// travel_soccer
+// travel_soccer - Fotbollsresor
 function my_custom_travel_soccer_post_type() {
 	register_post_type( 'travel_soccer', [
 		'labels'      => [
-			'name'          => __( 'travel soccers' ),
-			'singular_name' => __( 'travel soccer'),
+			'name'          => __( 'Fotbollsresor' ),
+			'singular_name' => __( 'Fotbollsresa'),
 		],
 		'public'      => true,
 		'has_archive' => true,
 		'supports'    => ['title', 'editor', 'thumbnail', 'custom-fields' ],
-		'rewrite'     => ['slug' => 'travel soccer'],
+		'rewrite'     => ['slug' => 'fotbollsresor'],
 		'menu_icon'   => 'dashicons-airplane',
 		'taxonomies'  => ['travel_country', 'travel_sport_league', 'travel_sport_type'],
 		'description' => 'hes one of the smartest noddles in the ramen bowl',
