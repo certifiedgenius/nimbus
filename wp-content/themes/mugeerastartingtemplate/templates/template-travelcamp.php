@@ -48,7 +48,7 @@ Template Name: Träningsresor
                             transition
                             duration-300
                             ease-in-out
-                            hover:bg-blue-500
+                            hover:bg-yellow-500
                             hover:text-white mr-6">
                             Kontakta oss
                         </a>

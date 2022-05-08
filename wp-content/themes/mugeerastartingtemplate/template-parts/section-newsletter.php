@@ -33,7 +33,7 @@
 						<form action="/action-page.php" class="m-4 flex">
 
 							<input type="email" name="email" class="rounded-l-lg p-4 border-t mr-0 border-b border-l text-gray-800 border-gray-200 bg-white" placeholder="Your E-mail"/>
-							<button type="submit" value="Subscribe" class="px-8 rounded-r-lg bg-yellow-400  text-gray-800 font-bold p-4 uppercase border-yellow-500 border-t border-b border-r hover:bg-purple-500 transition duration-200"">Subscribe</button>
+							<button type="submit" value="Subscribe" class="px-8 rounded-r-lg bg-yellow-400  text-gray-800 font-bold p-4 uppercase border-yellow-500 border-t border-b border-r hover:bg-yellow-600 transition duration-200"">Subscribe</button>
 
 						</form>
 					</div>
