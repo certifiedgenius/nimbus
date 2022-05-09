@@ -105,7 +105,7 @@ Template Name: Träningsresor
             <h1 class="py-12 text-5xl font-bold mb-1 mt-12">Resedetaljer</h1>
 
             <div class="p-6">
-                <p class="mx-auto text-base leading-relaxed text-gray-500">Flyg tur och retur med renommerat flygbolag5 till Heraklion inkl. hotelltransfer.</p>
+                <p class="mx-auto text-base leading-relaxed text-gray-500">Flyg tur och retur inkl. hotelltransfer.</p>
 
             </div>
 
