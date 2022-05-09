@@ -21,6 +21,10 @@
                             <div class="mt-4">
                                 <a href="<?php the_permalink();?>" class="inline-flex items-center mt-4 font-semibold text-blue-600 lg:mb-0 hover:text-neutral-600" title="Läs mer"> Läs mer » </a>
                             </div>
+
+                            
+                            <?php previous_posts_link();?>
+				            <?php next_posts_link();?>
                         </div>
 
 
@@ -31,3 +35,4 @@
 
     </div>
 </section>
+<?php get_footer(); ?>
