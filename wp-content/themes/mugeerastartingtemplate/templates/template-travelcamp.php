@@ -22,15 +22,15 @@ Template Name: Träningsresor
             bg-center
             bg-no-repeat
             bg-cover"
-            style="background-image: url('https://images.unsplash.com/photo-1609343007774-dad98a8f8c33?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1225&q=80')">
+            style="background-image: url('/wp-content/themes/mugeerastartingtemplate/assets/images/greece.jpg')">
 
 
                 <div class="w-full h-screen bg-opacity-50 bg-black flex justify-center items-center relative">
 
                     <div class="mx-4 text-center text-white">
 
-                        <h1 class="font-bold text-6xl mb-4">Träningsresor my love</h1>
-                        <p class="font-bold text-3xl mb-12">This is a test bound 2 falling in love</p>
+                        <h1 class="font-bold text-6xl mb-4">Träningsresor</h1>
+                        <p class="font-bold text-3xl mb-12">Åk på resor som skapar minen för livet.</p>
                     </div>
 
 
@@ -90,7 +90,7 @@ Template Name: Träningsresor
 
                             <div class="bg-fuchsia-300 -bottom-24 right-20 w-72 h-72 mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000 absolute rounded-full"></div>
                             <div class="relative">
-                            <img class="object-cover object-center mx-auto rounded-lg shadow-2xl" alt="hero" src="/wp-content/themes/mugeerastartingtemplate/assets/images/squareCard.png">
+                            <img class="object-cover object-center mx-auto rounded-lg shadow-2xl" alt="hero" src="/wp-content/themes/mugeerastartingtemplate/assets/images/cntower.jpg">
                             </div>
                         </div>
                         </div>
