@@ -72,14 +72,14 @@ Template Name: Träningsresor
                 <div class="2xl:max-w-7xl sm:px-6 md:px-12 lg:px-24 lg:py-24 2xl:px-12 px-4 py-12 mx-auto">
                     <div class="2xl:max-w-7xl flex flex-wrap items-center mx-auto">
                     <div class="lg:flex-grow lg:w-1/2 lg:pr-24 md:mb-0 flex flex-col items-start mb-16 text-left">
-                        <span class="mb-8 text-xs font-bold tracking-widest text-blue-600 uppercase"> Your tagline </span>
-                        <h1 class="text-neutral-600 md:text-7xl lg:text-5xl mb-8 text-4xl font-bold leading-none tracking-tighter">Medium length display headline.</h1>
-                        <p class="mb-8 text-base leading-relaxed text-left text-gray-500">Free and Premium themes, UI Kit's, templates and landing pages built with Tailwind CSS, HTML &amp; Next.js.</p>
+                        <span class="mb-8 text-xs font-bold tracking-widest text-blue-600 uppercase"> Canada </span>
+                        <h1 class="text-neutral-600 md:text-7xl lg:text-5xl mb-8 text-4xl font-bold leading-none tracking-tighter">CN Tower</h1>
+                        <p class="mb-8 text-base leading-relaxed text-left text-gray-500">At a height of 553.33 m (1,815 ft., 5 in), the CN Tower is Canada’s National Tower, an engineering Wonder, award-winning dining & entertainment destination, and Toronto’s “must-see” for over 4 decades.</p>
                         <div class="prose-md prose">
                         <ul>
-                            <li class="text-gray-500">Ain't no sunshine when she's gone.</li>
-                            <li class="text-gray-500">Expensive feature.</li>
-                            <li class="text-gray-500">Really good feauture.</li>
+                            <li class="text-gray-500">EdgeWalk.</li>
+                            <li class="text-gray-500">360 Restaurant.</li>
+                            <li class="text-gray-500">The Tower took 40 months to build and cost $63 million.</li>
                         </ul>
                         </div>
                     </div>
@@ -102,10 +102,11 @@ Template Name: Träningsresor
 
 
             <!-- Trip Details Section -->
-            <h1 class="py-12 text-5xl font-bold mb-1 mt-12">Trip Details</h1>
+            <h1 class="py-12 text-5xl font-bold mb-1 mt-12">Resedetaljer</h1>
 
             <div class="p-6">
-                <p class="mx-auto text-base leading-relaxed text-gray-500">lalalskkjdsadjiofasffa</p>
+                <p class="mx-auto text-base leading-relaxed text-gray-500">Flyg tur och retur med renommerat flygbolag5 till Heraklion inkl. hotelltransfer.</p>
+
             </div>
 
 
@@ -121,12 +122,12 @@ Template Name: Träningsresor
                         <div class="sm:flex items-center justify-between xl:gap-x-8 gap-x-6">
                         <div class="sm:w-1/2 relative">
                             <div>
-                            <p class="p-6 text-xs font-medium leading-3 text-white absolute top-0 right-0">12 April 2021</p>
+                            <p class="p-6 text-xs font-medium leading-3 text-white absolute top-0 right-0">19 October 2022</p>
                             <div class="absolute bottom-0 left-0 p-6">
                                 <h2 class="text-xl font-semibold 5 text-white">The Decorated Ways</h2>
                                 <p class="text-base leading-4 text-white mt-2">Dive into minimalism</p>
                                 <a href="javascript:void(0)" class="focus:outline-none focus:underline flex items-center mt-4 cursor-pointer text-white hover:text-gray-200 hover:underline">
-                                <p class="pr-2 text-sm font-medium leading-none">Read More</p>
+                                <p class="pr-2 text-sm font-medium leading-none">Läs mer</p>
                                 <svg class="fill-stroke" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M5.75 12.5L10.25 8L5.75 3.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                                 </svg>
@@ -139,12 +140,12 @@ Template Name: Träningsresor
 
                         <div class="sm:w-1/2 sm:mt-0 mt-4 relative">
                             <div>
-                            <p class="p-6 text-xs font-medium leading-3 text-white absolute top-0 right-0">12 April 2021</p>
+                            <p class="p-6 text-xs font-medium leading-3 text-white absolute top-0 right-0">12 Juni 2022</p>
                             <div class="absolute bottom-0 left-0 p-6">
                                 <h2 class="text-xl font-semibold 5 text-white">The Decorated Ways</h2>
                                 <p class="text-base leading-4 text-white mt-2">Dive into minimalism</p>
                                 <a href="javascript:void(0)" class="focus:outline-none focus:underline flex items-center mt-4 cursor-pointer text-white hover:text-gray-200 hover:underline">
-                                <p class="pr-2 text-sm font-medium leading-none">Read More</p>
+                                <p class="pr-2 text-sm font-medium leading-none">Läs mer</p>
                                 <svg class="fill-stroke" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M5.75 12.5L10.25 8L5.75 3.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                                 </svg>
@@ -158,12 +159,12 @@ Template Name: Träningsresor
 
                         <div class="relative">
                         <div>
-                            <p class="md:p-10 p-6 text-xs font-medium leading-3 text-white absolute top-0 right-0">12 April 2021</p>
+                            <p class="md:p-10 p-6 text-xs font-medium leading-3 text-white absolute top-0 right-0">23 December 2022</p>
                             <div class="absolute bottom-0 left-0 md:p-10 p-6">
                             <h2 class="text-xl font-semibold 5 text-white">The Decorated Ways</h2>
                             <p class="text-base leading-4 text-white mt-2">Dive into minimalism</p>
                             <a href="javascript:void(0)" class="focus:outline-none focus:underline flex items-center mt-4 cursor-pointer text-white hover:text-gray-200 hover:underline">
-                                <p class="pr-2 text-sm font-medium leading-none">Read More</p>
+                                <p class="pr-2 text-sm font-medium leading-none">Läs mer</p>
                                 <svg class="fill-stroke" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M5.75 12.5L10.25 8L5.75 3.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                                 </svg>
@@ -179,12 +180,12 @@ Template Name: Träningsresor
                     <div class="lg:w-1/2 xl:ml-8 lg:ml-4 lg:mt-0 md:mt-6 mt-4 lg:flex flex-col justify-between">
                         <div class="relative">
                         <div>
-                            <p class="md:p-10 p-6 text-xs font-medium leading-3 text-white absolute top-0 right-0">12 April 2021</p>
+                            <p class="md:p-10 p-6 text-xs font-medium leading-3 text-white absolute top-0 right-0">3 Augusti 2022</p>
                             <div class="absolute bottom-0 left-0 md:p-10 p-6">
                             <h2 class="text-xl font-semibold 5 text-white">The Decorated Ways</h2>
                             <p class="text-base leading-4 text-white mt-2">Dive into minimalism</p>
                             <a href="javascript:void(0)" class="focus:outline-none focus:underline flex items-center mt-4 cursor-pointer text-white hover:text-gray-200 hover:underline">
-                                <p class="pr-2 text-sm font-medium leading-none">Read More</p>
+                                <p class="pr-2 text-sm font-medium leading-none">Läs mer</p>
                                 <svg class="fill-stroke" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M5.75 12.5L10.25 8L5.75 3.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                                 </svg>
@@ -199,12 +200,12 @@ Template Name: Träningsresor
                         <div class="sm:flex items-center justify-between xl:gap-x-8 gap-x-6 md:mt-6 mt-4">
                         <div class="relative w-full">
                             <div>
-                            <p class="p-6 text-xs font-medium leading-3 text-white absolute top-0 right-0">12 April 2021</p>
+                            <p class="p-6 text-xs font-medium leading-3 text-white absolute top-0 right-0">13 November 2022</p>
                             <div class="absolute bottom-0 left-0 p-6">
                                 <h2 class="text-xl font-semibold 5 text-white">The Decorated Ways</h2>
                                 <p class="text-base leading-4 text-white mt-2">Dive into minimalism</p>
                                 <a href="javascript:void(0)" class="focus:outline-none focus:underline flex items-center mt-4 cursor-pointer text-white hover:text-gray-200 hover:underline">
-                                <p class="pr-2 text-sm font-medium leading-none">Read More</p>
+                                <p class="pr-2 text-sm font-medium leading-none">Läs mer</p>
                                 <svg class="fill-stroke" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M5.75 12.5L10.25 8L5.75 3.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                                 </svg>
@@ -217,12 +218,12 @@ Template Name: Träningsresor
 
                         <div class="relative w-full sm:mt-0 mt-4">
                             <div>
-                            <p class="p-6 text-xs font-medium leading-3 text-white absolute top-0 right-0">12 April 2021</p>
+                            <p class="p-6 text-xs font-medium leading-3 text-white absolute top-0 right-0">4 September 2022</p>
                             <div class="absolute bottom-0 left-0 p-6">
                                 <h2 class="text-xl font-semibold 5 text-white">The Decorated Ways</h2>
                                 <p class="text-base leading-4 text-white mt-2">Dive into minimalism</p>
                                 <a href="javascript:void(0)" class="focus:outline-none focus:underline flex items-center mt-4 cursor-pointer text-white hover:text-gray-200 hover:underline">
-                                <p class="pr-2 text-sm font-medium leading-none">Read More</p>
+                                <p class="pr-2 text-sm font-medium leading-none">Läs mer</p>
                                 <svg class="fill-stroke" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M5.75 12.5L10.25 8L5.75 3.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                                 </svg>
@@ -245,7 +246,7 @@ Template Name: Träningsresor
 
 
     <!-- Reviews Section -->
-    <h1 class="py-12 text-5xl font-bold mb-1 mt-12">Reviews</h1>
+    <h1 class="py-12 text-5xl font-bold mb-1 mt-12">Recensioner</h1>
 
 
             <section>
@@ -254,32 +255,32 @@ Template Name: Träningsresor
 
 
                         <div class="p-6">
-                            <img class="object-cover object-center w-full mb-8 lg:h-48 md:h-36 rounded-xl" src="/wp-content/themes/mugeerastartingtemplate/assets/images/squareCard.png" alt="blog">
+                            <img class="object-cover object-center w-full mb-8 lg:h-48 md:h-36 rounded-xl" src="/wp-content/themes/mugeerastartingtemplate/assets/images/burjkhalifa1920.jpg" alt="blog">
                             <div class="inline-flex justify-between w-full">
-                                <h1 class="mb-8 text-xl font-semibold leading-none tracking-tighter text-neutral-600">Short headline.</h1>
+                                <h1 class="mb-8 text-xl font-semibold leading-none tracking-tighter text-neutral-600">Dubai</h1>
                                 <span>2/5 &#11088;</span>
                             </div>
-                            <p class="mx-auto text-base font-medium leading-relaxed text-gray-500">Free and Premium themes, UI Kit's, templates and landing pages built with Tailwind CSS, HTML &amp; Next.js.</p>
+                            <p class="mx-auto text-base font-medium leading-relaxed text-gray-500">Att åka upp i Burj Khalifa är ett måste om man besöker Dubai! Annars har man inte varit där! Det kostar en slant, men då har man gjort det! Hissen går fortare än du hinner blinka och är i sig en upplevelse! Och när du är där uppe så är det högt! Måste upplevas! Väl värt ett besök!</p>
                         </div>
 
 
                         <div class="p-6">
-                            <img class="object-cover object-center w-full mb-8 lg:h-48 md:h-36 rounded-xl" src="/wp-content/themes/mugeerastartingtemplate/assets/images/squareCard.png" alt="blog">
+                            <img class="object-cover object-center w-full mb-8 lg:h-48 md:h-36 rounded-xl" src="/wp-content/themes/mugeerastartingtemplate/assets/images/eiffeltower.jpg" alt="blog">
                             <div class="inline-flex justify-between w-full">
-                                <h1 class="mb-8 text-xl font-semibold leading-none tracking-tighter text-neutral-600">Short headline.</h1>
+                                <h1 class="mb-8 text-xl font-semibold leading-none tracking-tighter text-neutral-600">Paris</h1>
                                 <span>5/5 &#11088;</span>
                             </div>
-                            <p class="mx-auto text-base font-medium leading-relaxed text-gray-500">Free and Premium themes, UI Kit's, templates and landing pages built with Tailwind CSS, HTML &amp; Next.js.</p>
+                            <p class="mx-auto text-base font-medium leading-relaxed text-gray-500">Reste med min pojkvän och mamma. Vi var alla jättenöjda med hotellet. Allt man kunde tänkas behöva fanns och servicen var utmärkt! Läget var också jättebra och det var nära till både metron och till många sevärdheter. </p>
                         </div>
 
 
                         <div class="p-6">
-                            <img class="object-cover object-center w-full mb-8 lg:h-48 md:h-36 rounded-xl" src="/wp-content/themes/mugeerastartingtemplate/assets/images/squareCard.png" alt="blog">
+                            <img class="object-cover object-center w-full mb-8 lg:h-48 md:h-36 rounded-xl" src="/wp-content/themes/mugeerastartingtemplate/assets/images/switzerland1920.jpg" alt="blog">
                             <div class="inline-flex justify-between w-full">
-                                <h1 class="mb-8 text-xl font-semibold leading-none tracking-tighter text-neutral-600">Short headline.</h1>
+                                <h1 class="mb-8 text-xl font-semibold leading-none tracking-tighter text-neutral-600">Switzerland</h1>
                                 <span>4/5 &#11088;</span>
                             </div>
-                            <p class="mx-auto text-base font-medium leading-relaxed text-gray-500">Free and Premium themes, UI Kit's, templates and landing pages built with Tailwind CSS, HTML &amp; Next.js.</p>
+                            <p class="mx-auto text-base font-medium leading-relaxed text-gray-500">Det är så fantastiskt fint. Återvänder gärna och hoppas då ha möjlighet att bo uppe i dalen. De små byarna man passerar är helt otroliga.</p>
                         </div>
 
 
@@ -320,7 +321,7 @@ Template Name: Träningsresor
                                         <h3 class="text-lg text-gray-600 font-semibold mb-2">New York</h3>
                                         </div>
                                         <p class="text-sm tracking-normal">Częstochowski pomnik Jana Pawła II wyjątkowo interesująco wpisuje się w poprzemysłowy krajobraz tego miasta o mocnych lewicowych, robotniczych i socjalistycznych tradycjach. Powstały w 2013 roku, uchodzi za najwyższego Karola Wojtyłę w Polsce.</p>
-                                        <button class="mt-12 w-full text-center bg-yellow-400 py-2 rounded-lg">Read more</button>
+                                        <button class="mt-12 w-full text-center bg-yellow-400 py-2 rounded-lg">Läs mer</button>
                                     </div>
                                     </div>
                                 </div>
@@ -346,7 +347,7 @@ Template Name: Träningsresor
                                         <h3 class="text-lg text-gray-600 font-semibold mb-2">New York</h3>
                                         </div>
                                         <p class="text-sm tracking-normal">Częstochowski pomnik Jana Pawła II wyjątkowo interesująco wpisuje się w poprzemysłowy krajobraz tego miasta o mocnych lewicowych, robotniczych i socjalistycznych tradycjach. Powstały w 2013 roku, uchodzi za najwyższego Karola Wojtyłę w Polsce.</p>
-                                        <button class="mt-12 w-full text-center bg-yellow-400 py-2 rounded-lg">Read more</button>
+                                        <button class="mt-12 w-full text-center bg-yellow-400 py-2 rounded-lg">Läs mer</button>
                                     </div>
                                     </div>
                                 </div>
@@ -372,7 +373,7 @@ Template Name: Träningsresor
                                         <h3 class="text-lg text-gray-600 font-semibold mb-2">New York</h3>
                                         </div>
                                         <p class="text-sm tracking-normal">Częstochowski pomnik Jana Pawła II wyjątkowo interesująco wpisuje się w poprzemysłowy krajobraz tego miasta o mocnych lewicowych, robotniczych i socjalistycznych tradycjach. Powstały w 2013 roku, uchodzi za najwyższego Karola Wojtyłę w Polsce.</p>
-                                        <button class="mt-12 w-full text-center bg-yellow-400 py-2 rounded-lg">Read more</button>
+                                        <button class="mt-12 w-full text-center bg-yellow-400 py-2 rounded-lg">Läs mer</button>
                                     </div>
                                     </div>
                                 </div>
