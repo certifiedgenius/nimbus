@@ -13,8 +13,17 @@
 
                     <div class="mx-4 text-center text-white">
 
-                        <h1 class="font-bold text-6xl mb-4">Träningsresor</h1>
-                        <p class="font-bold text-3xl mb-12">Åk på resor som skapar minen för livet.</p>
+                        <h1 class="font-bold text-6xl mb-4"> <?php the_title(); ?> </h1>
+                        <p class="font-bold text-3xl mb-12">
+                            <?php
+                                if ( have_posts() ) {
+                                    while( have_posts() ) {
+                                        the_post();
+                                        the_content();
+                                    }
+                                }
+
+                            ?></p>
                     </div>
 
 

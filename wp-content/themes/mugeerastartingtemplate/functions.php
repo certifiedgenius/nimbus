@@ -33,6 +33,11 @@ if ( ! function_exists( 'mugeera_theme_setup' ) ) {
 		] );
 
 
+
+
+
+
+
 		// Add theme support for Automatic Feed Links
 		add_theme_support( 'automatic-feed-links' );
 
@@ -87,6 +92,13 @@ if ( ! function_exists( 'mugeera_theme_setup' ) ) {
 }
 
 
+
+
+	//adds dynamic title tag support
+	function jinn_theme_support() {
+		add_theme_support('custom-logo');
+	}
+	add_action('after_setup_theme', 'jinn_theme_support');
 
 
 

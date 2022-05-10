@@ -37,13 +37,14 @@
 
                 <header class="flex justify-between text-black py-4 px-8">
 
-                    <a href="#" class="text-lg font-bold">nimbus</a>
+                    <a href="#" class="text-lg font-bold"> <?php _e( get_bloginfo( 'name' ) ); ?> </a>
 
                         <?php wp_nav_menu([
-                            'theme_location' => 'primary',
-                            'container' => 'nav',
-                            'depth' => 1,
-                            'menu_class' => 'flex flex-row items-center align-middle gap-4',
+                            'theme_location'    =>  'primary',
+                            'container'         =>  'nav',
+                            'depth'             =>   1,
+                            'items_wrap'        =>  '<ul class="flex flex-row items-center align-middle gap-4"> %3$s </ul>',
+                            'menu_class'        =>  'flex flex-row items-center align-middle gap-4',
                         ]); ?>
 
 
