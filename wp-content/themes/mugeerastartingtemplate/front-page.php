@@ -19,15 +19,8 @@
 
 
 
-
-
 		<!-- "Utvalda" featured content section 1 & 2 | The component "section featured content -->
 		<?php get_template_part( slug: 'template-parts/section', name: 'featuredcontent' ); ?>
-
-
-
-
-
 
 
 
@@ -38,28 +31,14 @@
 
 
 
-
-
-
-
 		<!-- Newsletter Section | The component "section newsletter -->
 		<?php get_template_part( slug: 'template-parts/section', name: 'newsletter' ); ?>
 
 
 
 
-
-
-
-
 		<!-- Landing Page Utvalda Solutions section at the bottom | The component "section featured solutions -->
 		<?php get_template_part( slug: 'template-parts/section', name: 'featuredsolutions' ); ?>
-
-
-
-
-
-
 
 
 <?php get_footer(); ?>
