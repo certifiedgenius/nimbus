@@ -37,6 +37,7 @@
 
                 <header class="flex justify-between text-black py-4 px-8">
 
+                    <!-- Dynamic Website name -->
                     <a href="#" class="text-lg font-bold"> <?php _e( get_bloginfo( 'name' ) ); ?> </a>
 
                         <?php wp_nav_menu([
