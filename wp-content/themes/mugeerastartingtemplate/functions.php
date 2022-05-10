@@ -269,7 +269,7 @@ function my_custom_netr_team_post_type() {
 		'public'      => true,
 		'has_archive' => true,
 		'supports'    => ['title', 'editor', 'thumbnail', 'custom-fields' ],
-		'rewrite'     => ['slug' => 'netr team'],
+		'rewrite'     => ['slug' => 'netrteam'],
 		'menu_icon'   => 'dashicons-airplane',
 		'taxonomies'  => ['travel_country', 'travel_sport_league', 'travel_sport_type'],
 		'description' => 'hes one of the smartest noddles in the ramen bowl',

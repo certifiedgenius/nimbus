@@ -20,7 +20,7 @@
 
 
 				<!-- The component for the single page -->
-				
+
 
 
 				<?php the_content(); ?>
@@ -35,11 +35,11 @@
 				previous_post_link();
 				next_post_link();
 			endif;
-		else :
-			_e( 'Sorry, no posts matched your criteria.', 'textdomain' );
-		endif;
+			else :
+				_e( 'Sorry, no posts matched your criteria.', 'textdomain' );
+			endif;
 
-		wp_reset_query();
+
 		?>
 
 </div>
