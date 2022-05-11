@@ -41,8 +41,8 @@
 										while( have_posts() ) {
 											the_post();
 
-											// Content | The component "Content content"
-											get_template_part( slug: 'template-parts/content', name: 'content' );
+											// Content | The component "Content single"
+											get_template_part( slug: 'template-parts/content', name: 'single' );
 										}
 									}
 								?>
