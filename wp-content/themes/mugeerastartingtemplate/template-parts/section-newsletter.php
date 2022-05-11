@@ -42,3 +42,9 @@
 				</div>
 			</div>
 	</section>
+
+
+
+	<!-- For the body section tag & div | that is in the hero component -->
+	</div>
+</section>

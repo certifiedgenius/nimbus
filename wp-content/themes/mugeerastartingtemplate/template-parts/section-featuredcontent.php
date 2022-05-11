@@ -1,3 +1,4 @@
+<!-- delete this php code, if your're not gonna add it to your hard code down there -->
 <?php
 if ( have_posts() ) {
     while( have_posts() ) {

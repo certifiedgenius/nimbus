@@ -15,7 +15,7 @@ Template Name: Träningsresor
 
 
 
-        <!-- The Hero below the nav | The component "section hero" -->
+                <!-- The Hero below the nav | The component "section hero" -->
 		<?php get_template_part( slug: 'template-parts/section', name: 'hero' ); ?>
 
 
@@ -25,13 +25,13 @@ Template Name: Träningsresor
 
     <!-- Main content of the page goes under here-->
     <section class="md:container md:mx-auto body-font">
-		<div class="container relative items-center w-full py-6 mx-auto md:px-12 lg:px-24 max-w-full">
+	<div class="container relative items-center w-full py-6 mx-auto md:px-12 lg:px-24 max-w-full">
 
 
 
 
                 <!-- hero card under the big hero hero | The component "section Hero Card" -->
-		        <?php get_template_part( slug: 'template-parts/section', name: 'herocard' ); ?>
+		<?php get_template_part( slug: 'template-parts/section', name: 'herocard' ); ?>
 
 
 

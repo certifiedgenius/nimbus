@@ -1,3 +1,8 @@
+<!-- Main content of the page goes under here-->
+<section class="md:container md:mx-auto body-font">
+		<div class="container relative items-center w-full py-6 mx-auto md:px-12 lg:px-24 max-w-full">
+
+        
             <!-- hero card under the big hero hero -->
             <section>
                 <div class="2xl:max-w-7xl sm:px-6 md:px-12 lg:px-24 lg:py-24 2xl:px-12 px-4 py-12 mx-auto">

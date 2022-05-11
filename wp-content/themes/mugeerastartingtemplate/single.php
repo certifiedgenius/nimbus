@@ -3,46 +3,68 @@
 
 
 
-<div class="">
+			<!-- The Hero below the nav | The component "section hero" section -->
+			<?php get_template_part( slug: 'template-parts/section', name: 'hero' ); ?>
 
 
 
-	<?php if ( have_posts() ) :while ( have_posts() ) : the_post(); ?>
-
-
-            <article
-				<?php post_class(); ?> id="post-<?php the_ID(); ?>">
-
-
-				<a href="<?php the_permalink(); ?>">
-					<h2> <?php the_title(); ?> </h2>
-				</a>
-
-
-				<!-- The component for the single page -->
+			<!-- hero card under the big hero hero | The component "section Hero Card" -->
+			<?php get_template_part( slug: 'template-parts/section', name: 'herocard' ); ?>
 
 
 
-				<?php the_content(); ?>
-			</article>
+			<!-- Trip Details Section & Travel tips gallery | The component "section Travel Gallery" -->
+			<?php get_template_part( slug: 'template-parts/section', name: 'travelgallery' ); ?>
 
 
 
-			<?php
-			endwhile;
-
-			if ( is_single() ) :
-				previous_post_link();
-				next_post_link();
-			endif;
-			else :
-				_e( 'Sorry, no posts matched your criteria.', 'textdomain' );
-			endif;
+			<!-- Reviews Section | The component "section Reviews" -->
+			<?php get_template_part( slug: 'template-parts/section', name: 'reviews' ); ?>
 
 
-		?>
 
-</div>
+
+			<!-- Latest Updates/News Section | The component "section latest Updates" -->
+			<?php get_template_part( slug: 'template-parts/section', name: 'latestupdates' ); ?>
+
+
+
+
+			<!-- Newsletter Section | The component "Newsletter Section" -->
+			<?php get_template_part( slug: 'template-parts/section', name: 'newsletter' ); ?>
+
+
+
+
+								<?php
+									if ( have_posts() ) {
+										while( have_posts() ) {
+											the_post();
+
+											// Content | The component "Content content"
+											get_template_part( slug: 'template-parts/content', name: 'content' );
+										}
+									}
+								?>
+
+
+						<article
+							<?php post_class(); ?> id="post-<?php the_ID(); ?>">
+
+
+							<a href="<?php the_permalink(); ?>">
+								<h2> <?php the_title(); ?> </h2>
+							</a>
+
+
+							<!-- The component for the single page -->
+
+
+
+							<?php the_content(); ?>
+						</article>
+
+
 
 
 <?php get_footer(); ?>
