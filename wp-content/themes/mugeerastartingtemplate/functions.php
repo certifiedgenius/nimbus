@@ -239,7 +239,7 @@ function my_custom_travel_camp_post_type() {
 		'public'      => true,
 		'has_archive' => true,
 		'supports'    => ['title', 'editor', 'thumbnail', 'custom-fields' ],
-		'rewrite'     => ['slug' => 'träningsresor'],
+		'rewrite'     => ['slug' => 'traningsresa'],
 		'menu_icon'   => 'dashicons-hammer',
 		'taxonomies'  => ['travel_age', 'travel_country', 'travel_sport_type', 'travel_type'],
 		'description' => 'hes one of the smartest noddles in the ramen bowl',

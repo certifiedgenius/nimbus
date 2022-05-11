@@ -54,6 +54,9 @@ Template Name: Träningsresor
 
 
                 <!-- Reviews Section | The component "section Reviews" -->
+                <!-- Reviews Section | name: 'travel' -->
+                <!-- Reviews Section | get_post_type, to check what post type it is, featured travel camp, create a new template part file for every variation, you could also have one specific for every template -->
+
                 <?php get_template_part( slug: 'template-parts/section', name: 'reviews' ); ?>
 
 

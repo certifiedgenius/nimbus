@@ -5,8 +5,7 @@
 
 
 		<!-- Main loop to check for all my post -->
-		<?php
-		if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
 
 
@@ -20,8 +19,8 @@
 					</a>
 
 
-					<!-- The component "section page content" to be added in page.php -->
-					<?php get_template_part( slug: 'template-parts/section', name: 'pagecontent' ); ?>
+					<!-- The component "content-page.php" to be added in page.php -->
+					<?php get_template_part( slug: 'template-parts/content', name: 'page' ); ?>
 
 
 					<div id="our-post-thumbnail">
@@ -37,11 +36,6 @@
 
 
 
-
-			if ( is_single() ) :
-				previous_post_link();
-				next_post_link();
-			endif;
 
 			else :
 				_e( 'Sorry, no posts matched your criteria.', 'textdomain' );

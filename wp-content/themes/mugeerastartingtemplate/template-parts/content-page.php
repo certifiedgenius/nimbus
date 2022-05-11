@@ -1,6 +1,3 @@
-<?php if( have_posts() ): while( have_posts() ): the_post();?>
-
-
 	<p><?php echo get_the_date('l jS F, Y');?></p>
 
 
@@ -49,8 +46,3 @@
 
 
 	<?php comments_template();?>
-
-
-
-
-<?php endwhile; else: endif;?>
