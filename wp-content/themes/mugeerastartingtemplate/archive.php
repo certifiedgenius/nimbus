@@ -21,7 +21,7 @@
 
 
                             <!-- title for the Blog post -->
-                            <h3 class="font-bold mb-5"><?php the_title();?></h3>
+                            <h3 class="font-bold mb-5"> <a href="<?php the_permalink(); ?>"> <?php the_title(); ?> </a> </h3>
 
 
                             <!-- excerpt for the blog post -->
@@ -31,7 +31,7 @@
                             <!-- Read more permalink -->
                             <div class="mb-12 mt-3">
                                 <a
-                                    href="<?php the_permalink();?>"
+                                    href="<?php the_permalink(); ?>"
                                     class="inline-flex items-center mt-4 font-semibold text-blue-600 lg:mb-0 hover:text-neutral-600"
                                     title="Läs mer"> Läs mer »
                                 </a>
