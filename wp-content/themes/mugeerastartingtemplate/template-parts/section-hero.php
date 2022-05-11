@@ -29,7 +29,7 @@
 
                     <div class="absolute bottom-14">
                         <a
-                            href="https://nimbus.test/kontakt/"
+                            href="kontakt/"
                             class="
                             border-2
                             border-white

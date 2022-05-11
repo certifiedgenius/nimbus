@@ -31,7 +31,7 @@
 						<?php get_template_part( slug: 'template-parts/content', name: 'page' ); ?>
 
 
-
+<p>hiiiiiiiiiiii</p>
 
 						<div id="our-post-thumbnail">
 							<?php the_post_thumbnail( 'wcm-gallery' ); ?>
