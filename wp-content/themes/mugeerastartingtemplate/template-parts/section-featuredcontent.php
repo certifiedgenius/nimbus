@@ -1,15 +1,3 @@
-<!-- delete this php code, if your're not gonna add it to your hard code down there -->
-<?php
-if ( have_posts() ) {
-    while( have_posts() ) {
-        the_post();
-        the_content();
-    }
-}
-?>
-
-
-
 <!-- "Utvalda" featured content section 1 -->
 <section class="md:container md:mx-auto">
 	<div class="container relative items-center w-full py-12 mx-auto md:px-12 lg:px-24 max-w-full">

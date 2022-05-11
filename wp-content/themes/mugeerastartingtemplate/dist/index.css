@@ -1459,6 +1459,10 @@ Ensure the default browser behavior of the `hidden` attribute.
     grid-column: span 2 / span 2;
   }
 
+  .lg\:mb-6{
+    margin-bottom: 1.5rem;
+  }
+
   .lg\:mb-0{
     margin-bottom: 0px;
   }

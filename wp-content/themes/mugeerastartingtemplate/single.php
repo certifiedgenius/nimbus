@@ -48,6 +48,7 @@
 								?>
 
 
+						<!-- this is the olka content near the footer that's leaking -->
 						<article
 							<?php post_class(); ?> id="post-<?php the_ID(); ?>">
 
@@ -57,7 +58,6 @@
 							</a>
 
 
-							<!-- The component for the single page -->
 
 
 

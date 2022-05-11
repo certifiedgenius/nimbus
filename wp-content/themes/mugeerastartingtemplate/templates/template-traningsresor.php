@@ -12,13 +12,8 @@ Template Name: Träningsresor
 
 
 
-
-
-
                 <!-- The Hero below the nav | The component "section hero" -->
 		<?php get_template_part( slug: 'template-parts/section', name: 'hero' ); ?>
-
-
 
 
 
@@ -28,14 +23,8 @@ Template Name: Träningsresor
 	<div class="container relative items-center w-full py-6 mx-auto md:px-12 lg:px-24 max-w-full">
 
 
-
-
                 <!-- hero card under the big hero hero | The component "section Hero Card" -->
 		<?php get_template_part( slug: 'template-parts/section', name: 'herocard' ); ?>
-
-
-
-
 
 
 
@@ -46,22 +35,10 @@ Template Name: Träningsresor
 
 
 
-
-
-
-
-
-
-
                 <!-- Reviews Section | The component "section Reviews" -->
                 <!-- Reviews Section | name: 'travel' -->
                 <!-- Reviews Section | get_post_type, to check what post type it is, featured travel camp, create a new template part file for every variation, you could also have one specific for every template -->
-
                 <?php get_template_part( slug: 'template-parts/section', name: 'reviews' ); ?>
-
-
-
-
 
 
 
@@ -72,13 +49,12 @@ Template Name: Träningsresor
 
 
 
-
                 <!-- Newsletter Section -->
                 <?php get_template_part( slug: 'template-parts/section', name: 'newsletter' ); ?>
 
 
         </div>
-	</section>
+        </section>
 
 
 

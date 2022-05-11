@@ -1,7 +1,12 @@
 <?php get_header(); ?>
 
 
-	<div class="">
+
+
+			<!-- The Hero below the nav | The component "section hero" section -->
+			<?php get_template_part( slug: 'template-parts/section', name: 'hero' ); ?>
+
+
 
 
 		<!-- Main loop to check for all my post -->
@@ -9,39 +14,45 @@
 
 
 
-				<article
-					<?php post_class(); ?> id="post-<?php the_ID(); ?>">
+					<article
+						<?php post_class(); ?> id="post-<?php the_ID(); ?>">
 
 
-					<!-- Title Link -->
-					<a href="<?php the_permalink(); ?>">
-						<h2> <?php the_title(); ?> </h2>
-					</a>
-
-
-					<!-- The component "content-page.php" to be added in page.php -->
-					<?php get_template_part( slug: 'template-parts/content', name: 'page' ); ?>
-
-
-					<div id="our-post-thumbnail">
-						<?php the_post_thumbnail( 'wcm-gallery' ); ?>
-					</div>
-
-
-					<?php the_excerpt(); ?>
-				</article>
-
-		<?php
-		endwhile;
+						<!-- Title Link -->
+						<a href="<?php the_permalink(); ?>">
+							<h2> <?php the_title(); ?> </h2>
+						</a>
 
 
 
 
-			else :
-				_e( 'Sorry, no posts matched your criteria.', 'textdomain' );
-			endif;
+
+						<!-- The component "content-page.php" to be added in page.php -->
+						<?php get_template_part( slug: 'template-parts/content', name: 'page' ); ?>
+
+
+
+
+						<div id="our-post-thumbnail">
+							<?php the_post_thumbnail( 'wcm-gallery' ); ?>
+						</div>
+
+
+						<?php the_excerpt(); ?>
+					</article>
+
+			<?php
+				endwhile;
+
+				else :
+					_e( 'Sorry, no posts matched your criteria.', 'textdomain' );
+				endif;
 			?>
 	</div>
+
+
+
+
 
 
 <?php get_footer(); ?>
