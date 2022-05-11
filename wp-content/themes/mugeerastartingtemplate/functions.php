@@ -233,13 +233,13 @@ add_action( 'init', 'my_custom_travel_cup_post_type', );
 function my_custom_travel_camp_post_type() {
 	register_post_type( 'travel_camp', [
 		'labels'      => [
-			'name'          => __( 'Träningsresor' ),
-			'singular_name' => __( 'Träningsresa'),
+			'name'          => __( 'Traningsresor' ),
+			'singular_name' => __( 'Traningsresa'),
 		],
 		'public'      => true,
 		'has_archive' => true,
 		'supports'    => ['title', 'editor', 'thumbnail', 'custom-fields' ],
-		'rewrite'     => ['slug' => 'traningsresa'],
+		'rewrite'     => ['slug' => 'traningsresor'],
 		'menu_icon'   => 'dashicons-hammer',
 		'taxonomies'  => ['travel_age', 'travel_country', 'travel_sport_type', 'travel_type'],
 		'description' => 'hes one of the smartest noddles in the ramen bowl',
