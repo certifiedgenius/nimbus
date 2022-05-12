@@ -10,7 +10,7 @@
 
 					<span> <?php echo get_the_date('l jS F, Y'); ?> </span>
 			<!-- Title --> <h1 class="text-4xl mb-4 mt-5 font-heading font-semibold"> <?php the_title(); ?> </h1>
-			<!-- who the author is --><a href="#" class="hover:text-blue-600 font-semibold">Skriven av <?php the_author(); ?> </a>
+			<!-- who the author is --> <a href="#" class="hover:text-blue-600 font-semibold">Skriven av <?php the_author(); ?> </a>
 				</div>
 
 
