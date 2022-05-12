@@ -2,7 +2,7 @@
 
 /*
 Template Name: Cuper
-Template Post Type: travel_cup
+Post Type: travel_cup
 */
 
 ?>
