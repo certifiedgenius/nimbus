@@ -2,6 +2,7 @@
 
 /*
 Template Name: Träningsresor
+Template Post Type: travel_camp
 */
 
 ?>

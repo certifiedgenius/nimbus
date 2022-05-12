@@ -1,26 +1,20 @@
-<div class="container pb50 ">
+<!-- Main content of the page goes under here-->
+<section class="md:container md:mx-auto body-font">
+    <div class="container relative items-center w-full py-6 mx-auto md:px-12 lg:px-24 max-w-full">
 
 
-    <h1> Comments </h1>
+
+<h1> Comments </h1>
 
     <?php
-
-        //Get only the approved comments
-        $args = array(
-            'status' => 'approve'
-        );
-
-        // The comment Query
-        $comments_query = new WP_Comment_Query;
-        $comments = $comments_query->query( $args );
-
-        // Comment Loop
-        if ( $comments ) {
-            foreach ( $comments as $comment ) {
-                echo '<p>' . $comment->comment_content . '</p>';
-                }
-        } else {
-            echo 'No comments found.';
+        if ( !have_comments() ) {
+        echo "Leave a Comment";
+        }
+        else {
+        echo get_comments_number() ."Comments";
         }
     ?>
-</div>
+
+
+    </div>
+</section>

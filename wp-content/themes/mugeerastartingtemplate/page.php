@@ -29,19 +29,12 @@
 
 
 
-
-				<!-- Main content of the page goes under here-->
-				<section class="md:container md:mx-auto body-font">
-						<div class="container relative items-center w-full py-6 mx-auto md:px-12 lg:px-24 max-w-full">
+								<!-- Leave a comment | comments.php template -->
+								<?php comments_template(); ?>
 
 
-							<?php
-								comments_template();
-							?>
-
-
-						</div>
-				</section>
+								<!-- Comment Section | content-comments.php -->
+								<?php get_template_part( slug: 'template-parts/content', name: 'comments' ); ?>
 
 
 

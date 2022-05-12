@@ -9,8 +9,8 @@
 				<div class="max-w-3xl mx-auto">
 
 					<span> <?php echo get_the_date('l jS F, Y'); ?> </span>
-						<h1 class="text-4xl mb-4 mt-5 font-heading font-semibold"> <?php the_title(); ?> </h1> <!-- Title -->
-							<a href="#" class="hover:text-blue-600 font-semibold">Skriven av <?php the_author(); ?> </a> <!-- who the author is -->
+			<!-- Title --> <h1 class="text-4xl mb-4 mt-5 font-heading font-semibold"> <?php the_title(); ?> </h1>
+			<!-- who the author is --><a href="#" class="hover:text-blue-600 font-semibold">Skriven av <?php the_author(); ?> </a>
 				</div>
 
 
@@ -18,16 +18,6 @@
 					<p class="mb-4">
 						<?php the_content();?>
 					</p>
-
-
-
-
-					<ul class="mb-4 list-inside list-disc">
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-					</ul>
 
 
 
