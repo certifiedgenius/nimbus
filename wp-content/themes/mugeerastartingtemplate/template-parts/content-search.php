@@ -64,7 +64,7 @@
                         </div>
 
 
-                        
+
 
                         <div class="flex justify-between items-center">
                             <div class="flex">
@@ -80,13 +80,7 @@
                             </div>
 
 
-                            <!-- reading time -->
-                            <div class="flex items-center">
-                                <small class="mr-2 text-gray-600">8 min read</small>
-                                <button type="button" class="bg-gray-400 rounded text-sm px-3 py-2 text-current hover:text-black hover:bg-gray-500">
-                                <span>Save</span>
-                                </button>
-                            </div>
+                            
 
 
                         </div>
