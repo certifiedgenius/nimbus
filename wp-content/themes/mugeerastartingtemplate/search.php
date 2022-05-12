@@ -1,22 +1,33 @@
 <?php get_header(); ?>
 
 
-<h1>Din sökresultat</h1>
 
 
-<div class="">
+					<!-- search bar under the nav | The component Search Bar section -->
+					<?php get_template_part( slug: 'template-parts/section', name: 'searchbar' ); ?>
+
+
+
+	<!-- under search bar -->
+	<h1 class="flex justify-center items-center py-2 text-5xl font-bold mb-1 mt-14">Sökresultat</h1>
+
+
+
 
 		<?php
 			if ( have_posts() ) :
 				while ( have_posts() ) : the_post();
 		?>
 
-					<article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
-						<a href="<?php the_permalink(); ?>"><h2><?php the_title(); ?></h2></a>
-						<div id="our-post-thumbnail">
-						</div>
-						<?php the_excerpt(); ?>
-					</article>
+
+
+					<!-- article -->
+
+						<!-- the search results | The component "search content" section -->
+						<?php get_template_part( slug: 'template-parts/content', name: 'search' ); ?>
+
+
+						
 
 			<?php
 				endwhile;
@@ -30,7 +41,7 @@
 				endif;
 			?>
 
-</div>
+
 
 
 <?php get_footer(); ?>
