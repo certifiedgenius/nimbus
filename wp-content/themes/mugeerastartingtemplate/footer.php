@@ -2,7 +2,7 @@
   <div class="max-w-screen-xl px-4 py-16 mx-auto sm:px-6 lg:px-8">
     <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
       <div>
-      <img src="#" class="mr-5 h-6 sm:h-9" alt="nimbus" />
+      <a href=" <?php _e( esc_url ( home_url( '/' ) )); ?> " class="mr-5 h-6 sm:h-9"> <?php _e( get_bloginfo( 'name' ) ); ?> </a>
         <p class="max-w-xs mt-4 text-sm text-gray-600">
             Hitta flyg enkelt, utan ändringsavgifter. Res med mindre CO₂ Se dina resealternativs miljöpåverkan.
         </p>
@@ -147,7 +147,7 @@
 
 
 
-          
+
 
         <?php wp_footer(); ?>
     </body>
