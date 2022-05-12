@@ -19,17 +19,18 @@
                                 if ( have_posts() ) {
                                     while( have_posts() ) {
                                         the_post();
-                                        the_content();
+                                       // the_title();
                                     }
                                 }
-
-                            ?></p>
+                            ?>
+                        </p>
                     </div>
 
 
                     <div class="absolute bottom-14">
                         <a
-                            href="kontakt/"
+                            href="/kontakt/"
+
                             class="
                             border-2
                             border-white

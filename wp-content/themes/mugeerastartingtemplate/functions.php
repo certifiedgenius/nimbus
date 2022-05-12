@@ -146,27 +146,7 @@ add_filter( 'nav_menu_css_class', 'social_link_classes', 10, 4 );
  * https://developer.wordpress.org/reference/functions/register_post_type/
  *
  */
-// custom post type students
-function my_custom_students_post_type() {
-	register_post_type( 'wcm_students', [
-		'labels'      => [
-			'name'          => __( 'Students' ),
-			'singular_name' => __( 'Student'),
-		],
-		'public'      => true,
-		'has_archive' => true,
-		'supports'    => ['title', 'editor', 'thumbnail', 'custom-fields' ],
-		'rewrite'     => ['slug' => 'students'],
-		'menu_icon'   => 'dashicons-businessperson',
-		'taxonomies'  => ['wcm_classes'],
-		'description' => 'a custom post type for students made for a workshop',
-	] );
-}
-add_action( 'init', 'my_custom_students_post_type', );
-
-
-
-// wcm_travel
+// custom post type wcm_travel
 function my_custom_wcm_travel_post_type() {
 	register_post_type( 'wcm_travel', [
 		'labels'      => [
@@ -297,31 +277,6 @@ add_action( 'init', 'my_custom_netr_team_post_type', );
  * Mer information kring funktionen register_taxonomy
  * https://developer.wordpress.org/reference/functions/register_taxonomy/
  */
-
-// Bättre namn på funktionen....
-// students
-function my_custom_taxonomy_for_students() {
-	$labels = [
-		'name'              => _x( 'Classes', 'taxonomy general name', 'wcmtheme' ),
-		'singular_name'     => _x( 'Class', 'taxonomy singular name','wcmtheme' ),
-		// Läs på om och lägg till fler vi behov!
-	];
-	$args   = [
-		'public'      		=> true,
-		'hierarchical'      => true,
-		'labels'            => $labels,
-		'show_ui'           => true,
-		'show_admin_column' => true,
-		'query_var'         => true,
-		'rewrite'           => array( 'slug' => 'classes' ),
-	];
-	register_taxonomy( 'wcm_classes', ['post'], $args ); // to what post type do you want to connect this taxonomy to?
-}
-add_action( 'init', 'my_custom_taxonomy_for_students',4 );
-
-
-
-
 // travel_age Taxonomies
 function my_custom_taxonomy_for_travel_age() {
 	$labels = [

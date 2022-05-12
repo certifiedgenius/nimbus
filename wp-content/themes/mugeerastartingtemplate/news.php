@@ -5,6 +5,8 @@ the_ID(); ?>">
     <div id="our-post-thumbnail">
         <?php the_post_thumbnail('wcm-gallery'); ?>
     </div>
+
+    
 	<?php
 	//get_template_part( 'post', 'title' );
     the_content();
