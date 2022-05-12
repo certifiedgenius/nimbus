@@ -576,14 +576,17 @@ Ensure the default browser behavior of the `hidden` attribute.
 .ml-3{
   margin-left: 0.75rem;
 }
+.mb-1{
+  margin-bottom: 0.25rem;
+}
+.mt-14{
+  margin-top: 3.5rem;
+}
 .mr-2{
   margin-right: 0.5rem;
 }
 .mb-2{
   margin-bottom: 0.5rem;
-}
-.mb-1{
-  margin-bottom: 0.25rem;
 }
 .mb-4{
   margin-bottom: 1rem;
@@ -599,9 +602,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .mb-20{
   margin-bottom: 5rem;
-}
-.mt-14{
-  margin-top: 3.5rem;
 }
 .mt-6{
   margin-top: 1.5rem;
@@ -698,9 +698,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .w-2\/4{
   width: 50%;
-}
-.w-8{
-  width: 2rem;
 }
 .w-16{
   width: 4rem;
@@ -1023,13 +1020,13 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-left: 0.75rem;
   padding-right: 0.75rem;
 }
-.px-2{
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-}
 .py-2{
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+}
+.px-2{
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 .py-5{
   padding-top: 1.25rem;
@@ -1297,13 +1294,13 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-text-opacity: 1;
   color: rgb(82 82 82 / var(--tw-text-opacity));
 }
-.hover\:text-black:hover{
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
-}
 .hover\:text-blue-600:hover{
   --tw-text-opacity: 1;
   color: rgb(37 99 235 / var(--tw-text-opacity));
+}
+.hover\:text-black:hover{
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 .hover\:text-white:hover{
   --tw-text-opacity: 1;
