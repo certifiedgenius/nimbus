@@ -23,7 +23,7 @@
 
 
         <div class="antialiased mx-auto max-w-screen-sm">
-            <h3 class="mb-4 text-lg font-semibold text-gray-900">Comments sarah</h3>
+            <h3 class="mb-4 text-lg font-semibold text-gray-900">Comments</h3>
 
             <div class="space-y-4">
 
