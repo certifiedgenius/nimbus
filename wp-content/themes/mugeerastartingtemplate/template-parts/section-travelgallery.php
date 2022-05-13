@@ -6,17 +6,7 @@
 </div>
 
 
-<?php
-    $sportresor = new WP_Query ([
-        'post_type' => 'travel_matches',
-        'posts_per_page' => '1'
-    ])
-?>
 
-<?php
-    if ( $sportresor->have_posts() ) :
-        while( $sportresor->have_posts() ) : $sportresor->the_post();
-?>
 
 <!-- Travel tips gallery -->
 <div class="h-1/5 overflow-hidden flex justify-center items-center">
@@ -29,7 +19,7 @@
                 <div>
                 <p class="p-6 text-xs font-medium leading-3 text-white absolute top-0 right-0"> 17 Juni 2022 </p>
                 <div class="absolute bottom-0 left-0 p-6">
-                    <h2 class="text-xl font-semibold 5 text-white"> <?php the_title(); ?> </h2>
+                    <h2 class="text-xl font-semibold 5 text-white"> ss </h2>
                     <p class="text-base leading-4 text-white mt-2">Dive into minimalism</p>
                     <a href="javascript:void(0)" class="focus:outline-none focus:underline flex items-center mt-4 cursor-pointer text-white hover:text-gray-200 hover:underline">
                     <p class="pr-2 text-sm font-medium leading-none">Läs mer</p>
@@ -146,6 +136,3 @@
 </div>
 
 </div>
-
-<?php wp_reset_query(); ?>
-<?php endwhile; endif; ?>

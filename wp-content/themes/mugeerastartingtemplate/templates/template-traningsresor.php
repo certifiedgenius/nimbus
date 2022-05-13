@@ -11,6 +11,11 @@ Post Type: travel_camp
 <?php get_header();?>
 
 
+                <!-- search bar under the nav | The component Search Bar section -->
+                <?php get_template_part( slug: 'template-parts/section', name: 'searchbar' ); ?>
+
+
+
 
 
                 <!-- The Hero below the nav | The component "section hero" -->
@@ -52,6 +57,12 @@ Post Type: travel_camp
 
                 <!-- Newsletter Section -->
                 <?php get_template_part( slug: 'template-parts/section', name: 'newsletter' ); ?>
+
+                
+
+
+                <!-- Landing Page Utvalda Solutions section at the bottom | The component "featured solutions section -->
+                <?php get_template_part( slug: 'template-parts/section', name: 'featuredsolutions' ); ?>
 
 
         </div>
