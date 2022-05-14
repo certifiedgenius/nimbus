@@ -36,33 +36,7 @@
 
 
 
-								<?php
-									if ( have_posts() ) {
-										while( have_posts() ) { // Determines whether current WordPress query has posts to loop over.
-											the_post(); // Iterate the post index in the loop.
-										}
-									}
-								?>
 
-
-						<!-- this is the olka content near the footer that's leaking -->
-						<article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
-
-
-
-
-							<a href="<?php the_permalink(); ?>"> <!-- displays the permalink for the current post -->
-
-
-								<h2> <?php the_title(); ?> </h2> <!-- display or retrieve the current post title -->
-							</a>
-
-
-
-
-
-							<?php the_content(); ?>
-						</article>
 
 
 
