@@ -1,0 +1,24 @@
+1:19 PM 		5/8/2022
+
+wcm Travels 			wcm_travel
+
+travel matches 	Sportresor	travel_matches
+
+travel cups	Cuper		travel_cup
+
+travel camps	Träningsresor	travel_camp
+
+travel soccers	Fotbollsresor	travel_soccer	
+
+netrs team			netr_team
+
+
+wcm_travel
+travel_matches
+travel_cup
+travel_camp
+travel_soccer
+netr_team
+
+
+What to do now:
