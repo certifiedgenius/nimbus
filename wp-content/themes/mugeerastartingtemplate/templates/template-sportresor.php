@@ -66,15 +66,16 @@ Post Type: travel_matches
                         <div class="sm:flex items-center justify-between xl:gap-x-8 gap-x-6">
                         <div class="sm:w-1/2 relative">
                                 <div>
-                                <p class="p-6 text-xs font-medium leading-3 text-white absolute top-0 right-0"> 17 Juni 2022 </p>
+                                <p class="p-6 text-xs font-medium leading-3 text-white absolute top-0 right-0"> <?php the_date(); ?> </p>
                                 <div class="absolute bottom-0 left-0 p-6">
+
                                 <h2 class="text-xl font-semibold 5 text-white"> <?php the_title(); ?> </h2>
-                                <p class="text-base leading-4 text-white mt-2">Dive into minimalism</p>
+
+                                <p class="text-base leading-4 text-white mt-2">Upptäck uppsala med hjälp av oss</p>
                                 <a href="javascript:void(0)" class="focus:outline-none focus:underline flex items-center mt-4 cursor-pointer text-white hover:text-gray-200 hover:underline">
-                                <p class="pr-2 text-sm font-medium leading-none">Läs mer</p>
-                                <svg class="fill-stroke" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M5.75 12.5L10.25 8L5.75 3.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                </svg>
+
+                                        <a href=" <?php the_permalink(); ?> "><p class="pr-2 text-sm font-medium leading-none text-white">Läs mer</p></a>
+
                                 </a>
                                 </div>
                                 </div>
@@ -86,8 +87,8 @@ Post Type: travel_matches
                                 <div>
                                 <p class="p-6 text-xs font-medium leading-3 text-white absolute top-0 right-0">12 Juni 2022</p>
                                 <div class="absolute bottom-0 left-0 p-6">
-                                <h2 class="text-xl font-semibold 5 text-white">The Decorated Ways</h2>
-                                <p class="text-base leading-4 text-white mt-2">Dive into minimalism</p>
+                                <h2 class="text-xl font-semibold 5 text-white">Placeholder</h2>
+                                <p class="text-base leading-4 text-white mt-2">Placeholder</p>
                                 <a href="javascript:void(0)" class="focus:outline-none focus:underline flex items-center mt-4 cursor-pointer text-white hover:text-gray-200 hover:underline">
                                 <p class="pr-2 text-sm font-medium leading-none">Läs mer</p>
                                 <svg class="fill-stroke" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -105,8 +106,8 @@ Post Type: travel_matches
                         <div>
                                 <p class="md:p-10 p-6 text-xs font-medium leading-3 text-white absolute top-0 right-0">23 December 2022</p>
                                 <div class="absolute bottom-0 left-0 md:p-10 p-6">
-                                <h2 class="text-xl font-semibold 5 text-white">The Decorated Ways</h2>
-                                <p class="text-base leading-4 text-white mt-2">Dive into minimalism</p>
+                                <h2 class="text-xl font-semibold 5 text-white">Placeholder</h2>
+                                <p class="text-base leading-4 text-white mt-2">Placeholder</p>
                                 <a href="javascript:void(0)" class="focus:outline-none focus:underline flex items-center mt-4 cursor-pointer text-white hover:text-gray-200 hover:underline">
                                 <p class="pr-2 text-sm font-medium leading-none">Läs mer</p>
                                 <svg class="fill-stroke" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -126,8 +127,8 @@ Post Type: travel_matches
                         <div>
                                 <p class="md:p-10 p-6 text-xs font-medium leading-3 text-white absolute top-0 right-0">3 Augusti 2022</p>
                                 <div class="absolute bottom-0 left-0 md:p-10 p-6">
-                                <h2 class="text-xl font-semibold 5 text-white">The Decorated Ways</h2>
-                                <p class="text-base leading-4 text-white mt-2">Dive into minimalism</p>
+                                <h2 class="text-xl font-semibold 5 text-white">Placeholder</h2>
+                                <p class="text-base leading-4 text-white mt-2">Placeholder</p>
                                 <a href="javascript:void(0)" class="focus:outline-none focus:underline flex items-center mt-4 cursor-pointer text-white hover:text-gray-200 hover:underline">
                                 <p class="pr-2 text-sm font-medium leading-none">Läs mer</p>
                                 <svg class="fill-stroke" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -146,8 +147,8 @@ Post Type: travel_matches
                                 <div>
                                 <p class="p-6 text-xs font-medium leading-3 text-white absolute top-0 right-0">13 November 2022</p>
                                 <div class="absolute bottom-0 left-0 p-6">
-                                <h2 class="text-xl font-semibold 5 text-white">The Decorated Ways</h2>
-                                <p class="text-base leading-4 text-white mt-2">Dive into minimalism</p>
+                                <h2 class="text-xl font-semibold 5 text-white">Placeholder</h2>
+                                <p class="text-base leading-4 text-white mt-2">Placeholder</p>
                                 <a href="javascript:void(0)" class="focus:outline-none focus:underline flex items-center mt-4 cursor-pointer text-white hover:text-gray-200 hover:underline">
                                 <p class="pr-2 text-sm font-medium leading-none">Läs mer</p>
                                 <svg class="fill-stroke" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -164,8 +165,8 @@ Post Type: travel_matches
                                 <div>
                                 <p class="p-6 text-xs font-medium leading-3 text-white absolute top-0 right-0">4 September 2022</p>
                                 <div class="absolute bottom-0 left-0 p-6">
-                                <h2 class="text-xl font-semibold 5 text-white">The Decorated Ways</h2>
-                                <p class="text-base leading-4 text-white mt-2">Dive into minimalism</p>
+                                <h2 class="text-xl font-semibold 5 text-white">Placeholder</h2>
+                                <p class="text-base leading-4 text-white mt-2">Placeholder</p>
                                 <a href="javascript:void(0)" class="focus:outline-none focus:underline flex items-center mt-4 cursor-pointer text-white hover:text-gray-200 hover:underline">
                                 <p class="pr-2 text-sm font-medium leading-none">Läs mer</p>
                                 <svg class="fill-stroke" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
