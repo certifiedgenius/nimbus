@@ -1,3 +1,19 @@
+<?php
+    $natr = new WP_Query ([
+            'post_type' => 'netr_team',
+            'posts_per_page' => '1'
+
+    ])
+?>
+
+
+<?php
+    if ( $natr->have_posts() ) :
+            while( $natr->have_posts() ) : $natr->the_post();
+?>
+
+
+
 <!-- "Utvalda" featured content section 1 -->
 <section class="md:container md:mx-auto">
 	<div class="container relative items-center w-full py-12 mx-auto md:px-12 lg:px-24 max-w-full">
@@ -8,11 +24,11 @@
             <div class="p-6">
                 <img class="object-cover object-center w-full mb-8 lg:h-48 md:h-36 rounded-xl" src="/wp-content/themes/mugeerastartingtemplate/assets/images/austria.jpg" alt="blog">
 
-                <h1 class="mx-auto mb-8 text-2xl font-semibold leading-none tracking-tighter text-neutral-600 lg:text-3xl">Austria</h1>
-                <p class="mx-auto text-base leading-relaxed text-gray-500">Austria, officially the Republic of Austria, is a country in the southern part of Central Europe.</p>
+                <h1 class="mx-auto mb-8 text-2xl font-semibold leading-none tracking-tighter text-neutral-600 lg:text-3xl"> <?php the_title(); ?> </h1>
+                <p class="mx-auto text-base leading-relaxed text-gray-500"> <?php the_excerpt(); ?> </p>
 
                 <div class="mt-4">
-                    <a href="#" class="inline-flex items-center mt-4 font-semibold text-blue-600 lg:mb-0 hover:text-neutral-600" title="Läs mer"> Läs mer » </a>
+                    <a href=" <?php the_permalink(); ?> " class="inline-flex items-center mt-4 font-semibold text-blue-600 lg:mb-0 hover:text-neutral-600" title="Läs mer"> Läs mer » </a>
                 </div>
             </div>
             <div class="p-6">
@@ -81,3 +97,7 @@
         </div>
     </div>
 </section>
+
+
+<?php wp_reset_query(); ?>
+<?php endwhile; endif; ?>
