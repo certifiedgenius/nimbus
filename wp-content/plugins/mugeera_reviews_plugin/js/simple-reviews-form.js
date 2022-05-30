@@ -1,8 +1,6 @@
-let delButton = document.querySelector('#del_trans');
-let submitButton = document.querySelector('#submit');
+let reviewsForm = document.querySelector('#reviews_form');
+reviewsForm.addEventListener('submit', doAjax)
 
-delButton.addEventListener('click', doAjax);
-submitButton.addEventListener('click', doAjax);
 
 function doAjax(event) {
     event.preventDefault();
@@ -14,42 +12,25 @@ function doAjax(event) {
     formData.append('nonce', delButton.getAttribute('data-nonce'));
 
     / myAjax.ajax url kommer från vår JS-variabel som vi skapade i wp_localize_script() i wp_plugin.php */
-    fetch(myAjax.ajaxurl, {
+
+    const actionUrl = reviewsForm.getAttribute('action');
+    const formData = new FormData(reviewsForm);
+
+
+    fetch(actionUrl, {
         method: 'POST',
         body: formData
     })
         .then(response => response.json())
         .then(data => {
 
-            if(data.type == "success") {
-                const repoList = document.querySelector('#repo_list');
+            console.log(data);
+            const formContainer = document.querySelector('#container');
 
-                repoList.innerHTML = '<li> Inga repos. </li>';
-            }
-            else {
-                alert("Your like could not be added");
-            }
+            formContainer.innerHTML = '<p class="${data.data.status}"> ${data.data.message} </p>';
+
         })
         .catch((error) => {
             console.error('Error:', error);
         });
 }
-
-
-/**
- * Nedan är exempel på att skicka ett POST request till WP-API:et (med jquery)
- *
- * Den kommer ändra title på post 17513 till "Hello Moon".
- */
-jQuery.ajax( {
-    url: myAjax.root + 'wp/v2/posts/17513',
-    method: 'POST',
-    beforeSend: function ( xhr ) {
-        xhr.setRequestHeader( 'X-WP-Nonce', myAjax.nonce );
-    },
-    data:{
-        'title' : 'Hello Moon'
-    }
-} ).done( function ( response ) {
-    console.log( response );
-} );

@@ -40,5 +40,5 @@
 		<!-- Landing Page Utvalda Solutions section at the bottom | The component "featured solutions section -->
 		<?php get_template_part( slug: 'template-parts/section', name: 'featuredsolutions' ); ?>
 
-
+<?php // echo do_shortcode('[reviews_form]') ?>
 <?php get_footer(); ?>

@@ -19,7 +19,7 @@
 // Plugin security, get this when they try to access your absolute URL path.
 if( !defined('ABSPATH') )
 {
-    echo 'get yo ugly ass out of here, before i whoop your mums Wi-Fi.';
+    echo 'Your IP & Mac Address have been recorded and the authorities have been notified.';
     exit;
 }
 
@@ -90,6 +90,45 @@ class simpleReviewsForm {
 
         // Add shortcode
         add_shortcode('reviews-form', array($this, 'load_shortcode')); // loads code on line 119
+
+
+        add_action('wp_ajax_submit_reviews', 'submit_reviews');
+        add_action('wp_ajax_nopriv_submit_reviews', 'submit_reviews');
+    }
+
+
+    public function submit_reviews() :void {
+        if ( ! wp_verify_nonce( $_POST['reviews_form_nonce'], "submit_reviews") )
+            exit ("Whiff whiff whiff" . var_dump($_POST));
+
+
+        $post_id = wp_insert_post([
+            'post_type'    => 'reviews',
+            'post_title'   => $_POST['reviews_title'],
+            'post_content' => $_POST['reviews_content'],
+            'post_status'  => 'pending',
+            'post_author'  =>  get_current_user_id() ?: 0,
+
+            'meta_input'    => [
+                'reviewer' => $_POST['reviewer_name'],
+                'post_id' => $_POST['reviews_post_id']
+            ],
+        ]);
+
+        if ( ! is_wp_error($post_id) ) {
+            $response = [
+                'status' => 'success',
+                'message' => 'Review was successful.',
+            ];
+        } else {
+            $response = [
+                'status' => 'failed',
+                'message' => 'there was an error.',
+            ];
+        };
+
+
+        wp_send_json( $response );
     }
 
 
@@ -119,32 +158,27 @@ class simpleReviewsForm {
     public function load_shortcode($atts = [], $content = null)
     {
         ?>
-            <div>
+            <div id="container">
 
                 <h1>Add an review</h1>
                 <p>Please fill the form below.</p>
 
-                <form action="">
+                <form id="reviews_form" action=" <?php echo admin_url('admin-ajax.php') ?> " method="$_POST">
 
-                    <input name="name" type="text" placeholder="Name">
-                    <input name="email" type="email" placeholder="e-mail">
+                <?php wp_nonce_field('submit_reviews', 'reviews_form_nonce'); ?>
 
-                    <textarea name="message" type="text" placeholder="Message"></textarea>
+                    <input name="reviewer_name" type="text" placeholder="Name">
+                    <input name="reviews_title" type="text" placeholder="Title">
+
+                    <textarea name="reviews_content" type="text" placeholder="Review"></textarea>
+
+                    <input type="hidden" name="reviews_post_id" value=" <?php the_ID(); ?> ">
+                    <input type="hidden" name="action" value="submit_reviews">
 
                     <button class="" type="submit">Submit</button>
                 </form>
             </div>
      <?php
     } // func load shortcode end
-
-
-
-
-    public function handle_reviews_form($data)
-    {
-        echo "this is working.";
-    }
-
-
 } // class end
 new simpleReviewsForm;

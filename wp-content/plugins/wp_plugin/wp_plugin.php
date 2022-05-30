@@ -3,11 +3,11 @@
 /**
  * Plugin Name: WCM WP Plugin
  * Plugin URI: https://example.com/plugins/the-basics/
- * Description: Handle the basics with this plugin.
+ * Description: Plugin that gets your GitHub Repos.
  * Version: 1.0.0
  * Requires at least: 5.9
  * Requires PHP: 7.4
- * Author: John Smith
+ * Author: Mikko x Mugeera
  * Author URI: https://author.example.com/
  * License: GPL v2 or later
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html
