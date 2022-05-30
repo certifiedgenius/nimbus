@@ -6,10 +6,10 @@
         <?php
 
         // output security fields for the registered setting "wcm_menu"
-        settings_fields('wcm_menu');
+        settings_fields('newsletter_menu');
         // output setting sections and their fields
         // (sections are registered for "wcm_menu", each field is registered to a specific section)
-        do_settings_sections('wcm_menu');
+        do_settings_sections('newsletter_menu');
         // output save settings button
         submit_button(__('Save Settings', 'textdomain'));
         ?>
@@ -19,17 +19,17 @@
     <form method="post">
 
         <!-- Lägg till en $nonce för security. -->
-        <?php $nonce = wp_create_nonce("wcm_repos_nonce"); ?>
+        <?php $nonce = wp_create_nonce("newsletter_user_nonce"); ?>
 
-        <button id="del_trans" name="delete_transients" data-nonce="<?php echo $nonce;?>">Delete Trans</button>
+        <button id="del_trans" name="delete_transients" data-nonce="<?php echo $nonce;?>">Delete Transients</button>
     </form>
 
 
     <form method="post">
-        <button name="get_repos">Load Repos</button>
+        <button name="get_repos">Load GitHub Repos</button>
     </form>
 
-    
+
     <?php
     if (!empty($repos)) {
         echo '<ul id="repo_list">';

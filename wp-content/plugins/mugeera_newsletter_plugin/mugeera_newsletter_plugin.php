@@ -24,24 +24,16 @@ if( !defined('ABSPATH') )
 }
 
 
-
-
 register_activation_hook( __FILE__, 'mugeera_newsletter_plugin_activated' );
 
 
-
-
-//register_deactivation_hook(__FILE__, 'plugin_deactivated');
-
-
+// register_deactivation_hook(__FILE__, 'plugin_deactivated');
 
 
 function mugeera_newsletter_plugin_activated() {
 	//
 	flush_rewrite_rules();
 }
-
-
 
 
 
@@ -55,14 +47,12 @@ add_shortcode('reviews-form', 'load_shortcode');
 
 
 
-
-
 function load_assets()
 {
     // CSS
     wp_enqueue_style(
         'simple-reviews-form',
-        plugin_dir_url( __FILE__ ) . 'css/simple-reviews-form.css',
+        plugin_dir_url( __FILE__ ) . 'css/styles.css',
         array(),
         1,
         'all'
@@ -72,17 +62,12 @@ function load_assets()
     // Javascript
     wp_enqueue_script(
         'simple-reviews-form',
-        plugin_dir_url( __FILE__ ) . 'js/simple-reviews-form.js',
+        plugin_dir_url( __FILE__ ) . 'js/app.js',
         array(),
         1,
         'true'
     );
-} // func load assets end
-
-
-
-
-// code here
+}
 
 
 
@@ -118,28 +103,28 @@ function newsletter_admin_page()
 /**
  * Lägg till settings på vår nya admin sida
  */
-function wcm_settings_init()
+function newsletter_settings_init()
 {
-    register_setting('wcm_menu', 'wcm_setting_name');
+    register_setting('newsletter_menu', 'newsletter_setting_name');
 
     /* Create settings section */
     add_settings_section(
-        'wcm_main_settings',                    // id
-        'API Settings',                        // title
-        'newsletter_settings_sections_html',  // callback
-        'wcm_menu'                           // page
+        'newsletter_main_settings',                    // id
+        'API Settings',                               // title
+        'newsletter_settings_sections_html',         // callback
+        'newsletter_menu'                           // page
     );
 
     /* Create input for settings */
     add_settings_field(
-        'wcm_settings_field',       // id
-        'API Nyckel',              // title
-        'wcm_api_field_html',     // callback
-        'wcm_menu',              // page
-        'wcm_main_settings'     // section
+        'newsletter_settings_field',       // id
+        'API Nyckel',                     // title
+        'newsletter_api_field_html',     // callback
+        'newsletter_menu',              // page
+        'newsletter_main_settings'     // section
     );
 }
-add_action('admin_init', 'wcm_settings_init');
+add_action('admin_init', 'newsletter_settings_init');
 
 
 
@@ -152,11 +137,11 @@ function newsletter_settings_sections_html()
 
 
 
-function wcm_api_field_html()
+function newsletter_api_field_html()
 {
-    $api_key = get_option('wcm_setting_name');
+    $api_key = get_option('newsletter_setting_name');
 
-    $output = '<input type="text" name="wcm_setting_name" value="';
+    $output = '<input type="text" name="newsletter_setting_name" value="';
     $output .= isset($api_key) ? esc_attr($api_key) : '';
     $output .= '" />';
 
@@ -172,15 +157,15 @@ function wcm_api_field_html()
  * Man lägger till dessa med två add_actions, den första gäller för inloggade användare,
  * och den andra för icke inloggade användare.
  */
-add_action("wp_ajax_wcm_del_repos_action", "delete_repo_transients");
-add_action("wp_ajax_nopriv_wcm_del_repos_action", "delete_repo_transients");
+add_action("wp_ajax_newsletter_del_repos_action", "delete_repo_transients");
+add_action("wp_ajax_nopriv_newsletter_del_repos_action", "delete_repo_transients");
 function delete_repo_transients() {
 
 	// nonce check for an extra layer of security, the function will exit if it fails
-	if ( !wp_verify_nonce( $_REQUEST['nonce'], "wcm_repos_nonce")) {
+	if ( !wp_verify_nonce( $_REQUEST['nonce'], "newsletter_user_nonce")) {
 		exit("Woof Woof Woof");
 	}
-	delete_transient('wcm_github_user_repos');
+	delete_transient('newsletter_github_user_repos');
 
 	echo json_encode( ['type' => 'success', 'data' => ['someKey' => 'someValue'] ] );
 	wp_die();
