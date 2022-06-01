@@ -40,10 +40,10 @@
 
         $response = wp_remote_get( $url, $args );
 
-        
+
         ?>
             <pre>
-                <?php  var_dump( json_decode(wp_remote_retrieve_body( $response )) ); ?>
+                <?php  var_dump(json_decode (wp_remote_retrieve_body( $response ) ) ); ?>
             </pre>
         <?php
     ?>
