@@ -31,20 +31,15 @@ register_activation_hook( __FILE__, 'mugeera_newsletter_plugin_activated' );
 
 
 function mugeera_newsletter_plugin_activated() {
-	//
 	flush_rewrite_rules();
 }
-
-
 
 
 // Add assets (js, css etc)
 add_action('wp_enqueue_scripts', 'load_assets');
 
 // Add shortcode
-add_shortcode('reviews-form', 'load_shortcode');
-
-
+add_shortcode('newsletter', 'load_shortcode');
 
 
 function load_assets()
@@ -68,8 +63,6 @@ function load_assets()
         'true'
     );
 }
-
-
 
 
 /**
@@ -96,8 +89,6 @@ function newsletter_admin_page()
 {
     include plugin_dir_path(__FILE__) . 'admin/newsletter_admin_page.php';
 }
-
-
 
 
 /**
@@ -127,14 +118,10 @@ function newsletter_settings_init()
 add_action('admin_init', 'newsletter_settings_init');
 
 
-
-
 function newsletter_settings_sections_html()
 {
     echo '<p>rad 128 Här kommer lite inställningar</p>';
 }
-
-
 
 
 function newsletter_api_field_html()
@@ -142,31 +129,8 @@ function newsletter_api_field_html()
     $api_key = get_option('newsletter_setting_name');
 
     $output = '<input type="text" name="newsletter_setting_name" value="';
-    $output .= isset($api_key) ? esc_attr($api_key) : '';
+    $output .= $api_key ??
     $output .= '" />';
 
     echo $output;
-}
-
-
-
-
-
-/**
- * För att kunna ta emot vårt Ajax request så måste vi ha en funktion som hanterar det.
- * Man lägger till dessa med två add_actions, den första gäller för inloggade användare,
- * och den andra för icke inloggade användare.
- */
-add_action("wp_ajax_newsletter_del_repos_action", "delete_repo_transients");
-add_action("wp_ajax_nopriv_newsletter_del_repos_action", "delete_repo_transients");
-function delete_repo_transients() {
-
-	// nonce check for an extra layer of security, the function will exit if it fails
-	if ( !wp_verify_nonce( $_REQUEST['nonce'], "newsletter_user_nonce")) {
-		exit("Woof Woof Woof");
-	}
-	delete_transient('newsletter_github_user_repos');
-
-	echo json_encode( ['type' => 'success', 'data' => ['someKey' => 'someValue'] ] );
-	wp_die();
 }
