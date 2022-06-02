@@ -12,8 +12,8 @@
 
 
 					<!-- Checkboxes -->
-					<div>
-						<form action="action/ajax.php" class="flex justify-start gap-6 mb-6">
+					<div id="container">
+						<form action="<?php echo admin_url('admin-ajax.php') ?>" id="newsletter-form" class="flex justify-start gap-6 mb-6">
 
 							<input type="checkbox" name="Sportresor" value="Sportresor">
 							<label for="Sportresor">Sportresor</label><br>
@@ -23,17 +23,15 @@
 
 							<input type="checkbox" name="Cuper" value="Cuper">
 							<label for="Cuper">Cuper</label><br><br>
-						</form>
+
 					</div>
 
 
 
 					<!-- E-mail input -->
 					<div>
-						<form action="/action-page.php" class="m-4 flex">
-
 							<input
-							action="<?php echo admin_url('admin-newsletter_admin_page.php') ?>"
+							action="#"
 							method="$_POST"
 							type="email"
 							name="email"

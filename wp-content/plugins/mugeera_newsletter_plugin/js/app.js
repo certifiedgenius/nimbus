@@ -1,5 +1,5 @@
-let reviewsForm = document.querySelector('#reviews_form');
-reviewsForm.addEventListener('submit', doAjax)
+let reviewsForm = document.querySelector('#newsletter_form');
+newsletterForm.addEventListener('submit', doAjax)
 
 
 function doAjax(event) {
@@ -7,8 +7,8 @@ function doAjax(event) {
     event.preventDefault();
 
 
-    const actionUrl = reviewsForm.getAttribute('action');
-    const formData = new FormData(reviewsForm);
+    const actionUrl = newsletterForm.getAttribute('action');
+    const formData = new FormData(newsletterForm);
 
 
     fetch(actionUrl, {

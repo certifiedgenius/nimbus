@@ -56,12 +56,16 @@ function load_assets()
 
     // Javascript
     wp_enqueue_script(
-        'simple-reviews-form',
+        'app',
         plugin_dir_url( __FILE__ ) . 'js/app.js',
         array(),
         1,
         'true'
     );
+
+    wp_localize_script('app', 'myAjax', [
+        'ajaxUrl' => admin_url('admin-ajax.php'),
+    ]);
 }
 
 

@@ -26,19 +26,30 @@
                 'Authorization' => 'Token ' . get_option('newsletter_setting_name'),
 
             ],
-            //'body' => json_encode(['contact' => 'mugeera.mansoor@elev.medieinstitutet.se'])
+            'body' => json_encode([
+                'email' => 'mugeera.mansoor@elev.medieinstitutet.se',
+            ], JSON_THROW_ON_ERROR )
         ];
+
+
         $url = 'https://api.getanewsletter.com/v3/lists/';
 
 
         $newContactUrl = 'https://api.getanewsletter.com/v3/contacts/';
-        //$response = wp_remote_post($newContactUrl, $args);
+        $response = wp_remote_post($newContactUrl, $args);
 
 
+        $args = [
+            'headers' => [
+                'Authorization' => 'Token ' . get_option('newsletter_setting_name'),
+
+            ],
+            //'body' => json_encode(['contact' => 'mugeera.mansoor@elev.medieinstitutet.se'])
+        ];
         $newSubUrl = 'https://api.getanewsletter.com/v3/lists/um89hs6Y8l2aOC1rq/subscribers/';
 
 
-        $response = wp_remote_get( $url, $args );
+        //$response = wp_remote_post( $url, $args );
 
 
         ?>
