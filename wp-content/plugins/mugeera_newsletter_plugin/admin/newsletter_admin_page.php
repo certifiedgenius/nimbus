@@ -24,10 +24,12 @@
             'headers' => [
                 'Content-Type' => 'application/json',
                 'Authorization' => 'Token ' . get_option('newsletter_setting_name'),
+                'date' => the_date(),
+
 
             ],
             'body' => json_encode([
-                'email' => 'mugeera.mansoor@elev.medieinstitutet.se',
+                'email' => '', // add your e-mail you want to send with here.
             ], JSON_THROW_ON_ERROR )
         ];
 
@@ -36,7 +38,7 @@
 
 
         $newContactUrl = 'https://api.getanewsletter.com/v3/contacts/';
-        $response = wp_remote_post($newContactUrl, $args);
+        //$response = wp_remote_post($newContactUrl, $args); uncomment this to post
 
 
         $args = [

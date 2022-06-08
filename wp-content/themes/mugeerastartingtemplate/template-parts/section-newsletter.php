@@ -31,14 +31,14 @@
 					<!-- E-mail input -->
 					<div>
 							<input
-							action="#"
-							method="$_POST"
+							action="handle_newsletter"
+							method="#"
 							type="email"
 							name="email"
 							class="rounded-l-lg p-4 border-t mr-0 border-b border-l text-gray-800 border-gray-200 bg-white"
 							placeholder="Your E-mail"/>
 
-							<input type="hidden" name="reviews_post_id" value=" <?php the_ID(); ?> ">
+							<input type="hidden" name="action" value=" <?php the_ID(); ?> ">
 
 							<button type="submit" value="Subscribe" class="px-8 rounded-r-lg bg-yellow-400  text-gray-800 font-bold p-4 uppercase border-yellow-500 border-t border-b border-r hover:bg-yellow-600 transition duration-200"">Subscribe</button>
 

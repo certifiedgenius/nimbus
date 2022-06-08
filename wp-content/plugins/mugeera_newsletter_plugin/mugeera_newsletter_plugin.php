@@ -62,10 +62,6 @@ function load_assets()
         1,
         'true'
     );
-
-    wp_localize_script('app', 'myAjax', [
-        'ajaxUrl' => admin_url('admin-ajax.php'),
-    ]);
 }
 
 
@@ -138,3 +134,130 @@ function newsletter_api_field_html()
 
     echo $output;
 }
+
+
+function load_shortcode($atts = [], $content = null)
+{
+    ?>
+        <!-- Landing Page Newsletter section -->
+<section class="md:container md:mx-auto">
+		<div class="container relative items-center w-full py-12 mx-auto mb-40 md:px-12 lg:px-24 max-w-full">
+
+			<h1 class="flex justify-center items-center py-2 text-5xl font-bold mb-1 mt-5">Nyhetsbrev</h1>
+				<p class="flex justify-center items-center py-3 mb-1 mt-5">Få uppdateringar kring spännande äventyr.</p>
+
+
+
+				<!-- Container holding both of the forms -->
+				<div class="container relative w-full py-12 mx-auto md:px-12 lg:px-24 grid place-items-center mt-11">
+
+
+					<!-- Checkboxes -->
+					<div id="container">
+						<form action="<?php echo admin_url('admin-ajax.php') ?>" id="newsletter-form" class="flex justify-start gap-6 mb-6">
+
+							<input type="checkbox" name="Sportresor" value="Sportresor">
+							<label for="Sportresor">Sportresor</label><br>
+
+							<input type="checkbox" name="Träningsläger" value="Träningsläger">
+							<label for="Träningsläger">Träningsläger</label><br>
+
+							<input type="checkbox" name="Cuper" value="Cuper">
+							<label for="Cuper">Cuper</label><br><br>
+
+					</div>
+
+
+
+					<!-- E-mail input -->
+					<div>
+							<input
+							action="handle_newsletter"
+							method="#"
+							type="email"
+							name="email"
+							class="rounded-l-lg p-4 border-t mr-0 border-b border-l text-gray-800 border-gray-200 bg-white"
+							placeholder="Your E-mail"/>
+
+							<input type="hidden" name="action" value=" <?php the_ID(); ?> ">
+
+							<button type="submit" value="Subscribe" class="px-8 rounded-r-lg bg-yellow-400  text-gray-800 font-bold p-4 uppercase border-yellow-500 border-t border-b border-r hover:bg-yellow-600 transition duration-200"">Subscribe</button>
+
+						</form>
+					</div>
+
+
+				</div>
+			</div>
+	</section>
+
+
+
+	<!-- For the body section tag & div | that is in the hero component -->
+	</div>
+</section>
+
+
+
+        <div id="container">
+
+            <h1>Add an review</h1>
+            <p>Please fill the form below.</p>
+
+            <form id="reviews_form" action=" <?php echo admin_url('admin-ajax.php') ?> " method="$_POST">
+
+            <?php wp_nonce_field('submit_reviews', 'reviews_form_nonce'); ?>
+
+                <input name="reviewer_name" type="text" placeholder="Name">
+                <input name="reviews_title" type="text" placeholder="Title">
+
+                <textarea name="reviews_content" type="text" placeholder="Review"></textarea>
+
+                <input type="hidden" name="reviews_post_id" value=" <?php the_ID(); ?> ">
+                <input type="hidden" name="action" value="submit_reviews">
+
+                <button class="" type="submit">Submit</button>
+            </form>
+        </div>
+    <?php
+}
+
+
+// Mikko Whiteboard
+function do_handle_ajax()
+{
+    $args = [
+        'headers' => [
+            'Content-Type' => 'application/json',
+            'Authorization' => 'Token ' . get_option('newsletter_setting_name'),
+            'date' => the_date(),
+
+
+        ],
+        'body' => json_encode([
+            'email' => 'AmberTured@gmail.com', // add your e-mail you want to send with here.
+        ], JSON_THROW_ON_ERROR )
+    ];
+
+
+    $url = 'https://api.getanewsletter.com/v3/lists/';
+
+
+    $newContactUrl = 'https://api.getanewsletter.com/v3/contacts/';
+    $response = wp_remote_post($newContactUrl, $args); // uncomment this to post
+
+    json_decode (wp_get) //write more
+
+    $args = [
+        'headers' => [
+            'Authorization' => 'Token ' . get_option('newsletter_setting_name'),
+
+        ],
+        //'body' => json_encode(['contact' => 'mugeera.mansoor@elev.medieinstitutet.se'])
+    ];
+    $newSubUrl = 'https://api.getanewsletter.com/v3/lists/um89hs6Y8l2aOC1rq/subscribers/';
+
+
+    //$response = wp_remote_post( $url, $args );
+}
+add_action('wp_ajax_handle_newsletter', 'do_handle_ajax');
