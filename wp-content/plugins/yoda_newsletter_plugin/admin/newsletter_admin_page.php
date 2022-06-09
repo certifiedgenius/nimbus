@@ -20,22 +20,25 @@
 
 
     <?php
+
+
+
         $url = 'https://api.getanewsletter.com/v3/lists/';
 
 
+       
+
         $args = [
             'headers' => [
-                'Content-Type' => 'application/json',
-                'Authorization' => 'Token' . get_option('newsletter_setting_name'),
-
+                'Authorization' => 'Token ' . get_option('newsletter_setting_name'),
 
             ],
-            'body' => json_encode(['contact' => '3rdsister@darkside.force'])
+            //'body' => json_encode(['contact' => 'mugeera.mansoor@elev.medieinstitutet.se'])
         ];
         $newSubUrl = 'https://api.getanewsletter.com/v3/lists/um89hs6Y8l2aOC1rq/subscribers/';
 
 
-        $response = wp_remote_post( $url, $args );
+        $response = wp_remote_get( $url, $args );
 
 
         ?>

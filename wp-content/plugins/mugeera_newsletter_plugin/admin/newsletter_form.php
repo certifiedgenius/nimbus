@@ -1,6 +1,6 @@
-<!-- Landing Page Newsletter section -->
-<section class="md:container md:mx-auto">
-		<div class="container relative items-center w-full py-12 mx-auto mb-40 md:px-12 lg:px-24 max-w-full">
+        <!-- Landing Page Newsletter section -->
+        <section class="md:container md:mx-auto">
+		    <div class="container relative items-center w-full py-12 mx-auto mb-40 md:px-12 lg:px-24 max-w-full">
 
 			<h1 class="flex justify-center items-center py-2 text-5xl font-bold mb-1 mt-5">Nyhetsbrev</h1>
 				<p class="flex justify-center items-center py-3 mb-1 mt-5">Få uppdateringar kring spännande äventyr.</p>
@@ -13,7 +13,7 @@
 
 					<!-- Checkboxes -->
 					<div id="container">
-						<form action="<?php echo admin_url('admin-ajax.php') ?>" method="POST" id="newsletter-form" class="flex justify-start gap-6 mb-6">
+						<form action="<?php echo admin_url('admin-ajax.php') ?>" method="POST" id="newsletter_form" class="flex justify-start gap-6 mb-6">
 
 							<input type="checkbox" name="Sportresor" value="Sportresor">
 							<label for="Sportresor">Sportresor</label><br>
@@ -31,8 +31,6 @@
 					<!-- E-mail input -->
 					<div>
 							<input
-							action="handle_newsletter"
-							method="#"
 							type="email"
 							name="email"
 							class="rounded-l-lg p-4 border-t mr-0 border-b border-l text-gray-800 border-gray-200 bg-white"
@@ -55,12 +53,4 @@
 
 				</div>
 			</div>
-	</section>
-
-
-
-	<!-- For the body section tag & div | that is in the hero component -->
-	</div>
-</section>
-
-<?php do_shortcode('[newsletter_formen]'); ?>
+    </section>

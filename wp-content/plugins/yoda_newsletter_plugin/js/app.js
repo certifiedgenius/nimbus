@@ -24,7 +24,7 @@ function doAjax(event) {
                 console.log(data.message);
             }
             else {
-                alert("This operation had failed you.");
+                alert("För i helvete.....");
             }
         })
         .catch((error) => {
