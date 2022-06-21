@@ -57,6 +57,9 @@
 
         <div class="grid w-full grid-cols-1 gap-6 mx-auto lg:grid-cols-3">
 
+
+
+        
 <?php
     $travel = new WP_Query ([
             'post_type' => 'travel_soccer',
