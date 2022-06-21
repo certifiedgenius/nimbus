@@ -43,6 +43,8 @@ Post Type: travel_camp
                 </div>
 
 
+
+
                 <?php
                 $camps = new WP_Query ([
                         'post_type' => 'travel_camp',
@@ -58,6 +60,8 @@ Post Type: travel_camp
                 ?>
 
 
+
+
                 <!-- Travel tips gallery -->
                 <div class="h-1/5 overflow-hidden flex justify-center items-center">
                 <div class="2xl:mx-auto 2xl:container lg:px-20 lg:py-16 md:py-12 md:px-6 py-9 px-4 w-96 sm:w-auto">
@@ -65,6 +69,7 @@ Post Type: travel_camp
                         <div class="lg:flex items-stretch md:mt-12 mt-8">
                         <div class="lg:w-1/2">
                         <div class="sm:flex items-center justify-between xl:gap-x-8 gap-x-6">
+
                         <div class="sm:w-1/2 relative">
                                 <div>
                                 <p class="p-6 text-xs font-medium leading-3 text-white absolute top-0 right-0"> <?php the_date(); ?> </p>
@@ -83,7 +88,7 @@ Post Type: travel_camp
                                 <img src="/wp-content/themes/mugeerastartingtemplate/assets/images/greeceoz.jpg" class="w-full" alt="chair" />
                         </div>
 
-
+                        <!-- Post -->
                         <div class="sm:w-1/2 sm:mt-0 mt-4 relative">
                                 <div>
                                 <p class="p-6 text-xs font-medium leading-3 text-white absolute top-0 right-0"> 12 January 2023 </p>
@@ -100,9 +105,11 @@ Post Type: travel_camp
                                 </div>
                                 <img src="/wp-content/themes/mugeerastartingtemplate/assets/images/venice.jpg" class="w-full" alt="wall design" />
                         </div>
+
+
                         </div>
 
-
+                         <!-- Post -->
                         <div class="relative">
                         <div>
                                 <p class="md:p-10 p-6 text-xs font-medium leading-3 text-white absolute top-0 right-0">23 December 2022</p>
@@ -120,10 +127,14 @@ Post Type: travel_camp
                         <img src="/wp-content/themes/mugeerastartingtemplate/assets/images/china.jpg" alt="sitting place" class="w-full mt-8 md:mt-6 hidden sm:block" />
                         <img class="w-full mt-4 sm:hidden" src="https://i.ibb.co/6XYbN7f/Rectangle-29.png" alt="sitting place" />
                         </div>
+
+
                         </div>
 
 
                         <div class="lg:w-1/2 xl:ml-8 lg:ml-4 lg:mt-0 md:mt-6 mt-4 lg:flex flex-col justify-between">
+
+                         <!-- Post -->
                         <div class="relative">
                         <div>
                                 <p class="md:p-10 p-6 text-xs font-medium leading-3 text-white absolute top-0 right-0">3 Augusti 2022</p>
@@ -144,6 +155,8 @@ Post Type: travel_camp
 
 
                         <div class="sm:flex items-center justify-between xl:gap-x-8 gap-x-6 md:mt-6 mt-4">
+
+                         <!-- Post -->
                         <div class="relative w-full">
                                 <div>
                                 <p class="p-6 text-xs font-medium leading-3 text-white absolute top-0 right-0">13 November 2022</p>
@@ -162,6 +175,7 @@ Post Type: travel_camp
                         </div>
 
 
+                         <!-- Post -->
                         <div class="relative w-full sm:mt-0 mt-4">
                                 <div>
                                 <p class="p-6 text-xs font-medium leading-3 text-white absolute top-0 right-0">4 September 2022</p>
@@ -182,6 +196,8 @@ Post Type: travel_camp
 
                         </div>
                         </div>
+
+
                         </div>
                 </div>
                 </div>
