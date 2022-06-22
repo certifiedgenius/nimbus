@@ -10,7 +10,7 @@
 
 <?php
     $natr = new WP_Query ([
-            'post_type' => 'netr_team',
+            'post_type' => 'travel_matches',
             'posts_per_page' => '3'
 
     ])
@@ -59,7 +59,7 @@
 
 
 
-        
+
 <?php
     $travel = new WP_Query ([
             'post_type' => 'travel_soccer',
